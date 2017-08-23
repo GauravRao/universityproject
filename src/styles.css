@@ -1,0 +1,37 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+body {
+  overflow-x: hidden;
+}
+
+.setBackgroundGrey {
+  background-color: #F1F5F8;
+  width: 106%;
+  height: 100vh;
+}
+
+.sidebar .nav, .off-canvas-sidebar .nav {
+  margin-left: 6%;
+}
+
+.sidebar[data-color="white"] .nav li.active a, .off-canvas-sidebar[data-color="white"] .nav li.active a {
+  background-color: #fff;
+  color: #ccc !important;
+  box-shadow: -1px 1px 8px 1px #ccc;
+}
+
+.mat-tab-list {
+  background-color: #fff !important;
+}
+
+.nav>li {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.setIconHeadStyle {
+  margin-top: 43px;
+  color: #C5CCD5;
+  margin-left: 16%;
+}

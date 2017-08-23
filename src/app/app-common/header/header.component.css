@@ -1,0 +1,54 @@
+.headerPos {
+  background-color: #fff;
+  height: 68px;
+}
+
+@media (min-width: 770px) {
+  .headerPos {
+    position: fixed;
+    z-index: 100;
+    background-color: #fff;
+    height: 80px;
+  }
+}
+
+.logoImg {
+  margin-top: 34px;
+  margin-left: 20%;
+  width: 24%;
+  height: 32%;
+  cursor: pointer;
+}
+
+.setLoginPos {
+  margin-top: 61px;
+  margin-right: 10px;
+}
+
+.setBrandNameStyle {
+  line-height: 4;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left:-12%; 
+  color: #D3D8E0;
+}
+
+@media (min-width: 1250px) {
+  .logoImg {
+    margin-top: 10px;
+    margin-left: 25%;
+    width: 24%;
+    height: 32%;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: 1850px) and (max-width: 1950px) {
+  .logoImg {
+    margin-top: 12px;
+    margin-left: 13%;
+    width: 18%;
+    height: 25%;
+    cursor: pointer;
+  }
+}

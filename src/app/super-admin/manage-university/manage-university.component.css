@@ -1,0 +1,40 @@
+.table {
+  width: 99%;
+  background-color: #fff;
+  margin-top: 2%;
+}
+
+.setMarginTop {
+  margin-top: 10%;
+}
+
+.sidebar .nav, .off-canvas-sidebar .nav {
+  margin-left: 6%;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+  border: none !important;
+  height: 50px;
+}
+
+.titleStyle{
+	font-size: 18px;
+	color: #333;
+	line-height: 50px;
+}
+.innerHeadStyle{
+	color: #ccc;
+	font-weight: lighter;
+	font-size: 12px;
+}
+
+.setCollegeStyle{
+	color: #ccc;
+}
+.setColorBlue{
+	color: #96C3FB;
+}
+
+.setBorderBottom{
+	border-bottom: 1px solid #ececec;
+}
