@@ -1,0 +1,43 @@
+.setBorderBottom {
+  margin-top: 10px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ccc;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.setBorderBottomLast {
+  margin-top: 10px;
+  padding-bottom: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.setLastBorder {
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.setMarginTop {
+  margin-top: 10px;
+}
+
+.setHeadFont {
+  font-size: 18px;
+  color: #fff !important;
+}
+
+.panel-group div {
+  color: #676767;
+  vertical-align: center;
+}
+
+.panel-heading {
+  height: 60px;
+  background-color: #3274F6 !important;
+}
+
+.setBackgrnd {
+  background-color: #F6F8FA;
+  height: 100vh;
+}

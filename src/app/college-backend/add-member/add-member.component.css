@@ -1,0 +1,109 @@
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]+label {
+  background: #999;
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  padding: 0 0 0 0px;
+}
+
+input[type=checkbox]:checked+label {
+  background: #0080FF;
+  height: 16px;
+  width: 16px;
+  display: inline-block;
+  padding: 0 0 0 0px;
+}
+input[type=text],input[type=email]{
+  background: #F6F8FA;
+  border-radius: 0 !important;
+  height: 50px;
+}
+.btnCustomizeStyle{
+  background: #3274F6;
+  border-radius: 50px;
+
+}
+.setBackGrnd{
+  background: #F6F8FA;
+}
+.setHeaderBackground{
+  background: #fff;
+  height: 80px;
+  line-height: 80px;
+  font-size: 18px;
+  color: #ccc;
+}
+.setAddMemeberBodyConatiner{
+  background: #fff;
+  font-size: 16px;
+  margin-top: 25px;
+}
+.setInputHeight{
+  margin-top: 20px;
+}
+.setFooterStyle{
+  background: #fff;
+  margin-top: 30px;
+  height: 160px;
+  font-size: 16px;
+  color: #949494;
+  line-height: 160px;
+}
+.setTextPos{
+  margin-top: 30px;
+  color: #949494;
+}
+/*****************************************
+  upload button styles
+******************************************/
+
+.file-upload {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+.file-upload__label {
+  display: block;
+  padding: 1em 2em;
+  color: #4984F6;
+  border-radius: .4em;
+  border:1px solid #4984F6;
+  transition: background .3s;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.file-upload__input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  font-size: 1;
+  width: 0;
+  height: 100%;
+  opacity: 0;
+}
+
+
+/*****************************************
+ design styles
+******************************************/
+
+html {
+  font-family: 'helvetica neue', 'arial', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  padding-top: 5em;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  background: #EE4F47;
+}

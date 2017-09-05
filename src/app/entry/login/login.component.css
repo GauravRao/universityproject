@@ -1,0 +1,49 @@
+* {}
+
+/*body {
+  background-image: url("background1.jpg");
+  background-size: 100% 100%
+}*/
+
+footer {
+  background-color: white;
+  padding: 40px 40px 0px 40px;
+}
+
+.navbar {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.dropdown {
+  width: 100%;
+}
+
+.jumbotron {
+  background-color: white;
+  border-color: transparent;
+  color: #FFFFFF;
+}
+
+.jumbotron1 {
+  background-color: transparent;
+  border-color: transparent;
+  text-align: center;
+}
+
+#color {
+  background-color: #D3D3D3;
+}
+
+#header {
+  size: 50%;
+}
+
+
+/* Add a gray background color and some padding to the footer */
+
+footer {
+  background-color: white;
+  position: bottom;
+  padding-left: 145px;
+}

@@ -1,0 +1,90 @@
+<div class="container-fluid setMainBckgrndStyle">
+  <div class="row">
+    <div class="col-xs-12 setWhiteBckgrnd setHeadStyle">
+      <span class="col-md-offset-1">Manage Admins</span>
+    </div>
+  </div>
+  <div class="row setInputHeight">
+    <div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-8 setWhiteBckgrnd">
+      <div class="row setmarginTop">
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+          <button type="button" name="button" class="btn btn-md setButtonStyle">ADD NEW ADMIN</button>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-offset-6 col-md-3 col-lg-3 text-right">
+          <div class="input-group">
+            <span class="input-group-addon">
+              <label for="searchAdmin">Search:</label>
+           </span>
+            <input type="text" id="searchAdmin" class="form-control">
+          </div>
+        </div>
+      </div>
+      <div class="row setmarginTop">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 table-responsive">
+          <table class="table table-striped" [mfData]="data" #mf="mfDataTable" [mfRowsOnPage]="rowsOnPage">
+            <thead class="innerHeadStyle">
+              <tr>
+                <th class=" col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                  <mfDefaultSorter by="members"><span class="innerHeadStyle">ADMIN MEMBERS</span></mfDefaultSorter>
+                </th>
+                <th class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+                  <mfDefaultSorter by="title"><span class="innerHeadStyle">TITLE</span></mfDefaultSorter>
+                </th>
+                <th class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+                  <mfDefaultSorter by="phone"><span class="innerHeadStyle">PHONE</span></mfDefaultSorter>
+                </th>
+                <th class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+                  <mfDefaultSorter by="email"><span class="innerHeadStyle">EMAIL</span></mfDefaultSorter>
+                </th>
+                <th class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
+                  <span class="innerHeadStyle">ACTIONS</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody class="" *ngIf="mf.data.length>0; else message">
+              <tr *ngFor="let item of mf.data; let idx = index">
+                <td class=" col-xs-6 col-sm-6 col-md-4 col-lg-4">{{item.college}}</td>
+                <td class=" col-xs-6 col-sm-6 col-md-2 col-lg-2">{{item.programs}}</td>
+                <td class=" col-xs-6 col-sm-6 col-md-2 col-lg-2">{{item.courses}}</td>
+                <td class=" col-xs-6 col-sm-6 col-md-2 col-lg-2">{{item.members}}</td>
+                <td class=" col-xs-6 col-sm-6 col-md-2 col-lg-2">
+                  <i class="fa fa-wrench"></i>
+                  <i class="fa fa-wrench"></i>
+                </td>
+              </tr>
+            </tbody>
+            <tfoot *ngIf="mf.data.length>0">
+              <tr>
+                <th colspan="6">
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 pull-right">
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-2">
+                        <span>Showing Page {{ (mf.activePage - 1) * mf.rowsOnPage  + 1 }} of {{data_length}}</span>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3">
+                        <mfBootstrapPaginator></mfBootstrapPaginator>
+                      </div>
+                    </div>
+                  </div>
+              </tr>
+            </tfoot>
+            <ng-template #message>
+              <tbody>
+                <tr>
+                  <th colspan="6" class="text-center">
+                    No details Found
+                  </th>
+                </tr>
+              </tbody>
+            </ng-template>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row setWhiteBckgrnd setFooterStyle">
+    <div class="col-xs-12 text-center">
+      <span>&copy; 2016 SOCIAL UNIVERSITY. All Rights Reserved</span>
+    </div>
+  </div>
+</div>

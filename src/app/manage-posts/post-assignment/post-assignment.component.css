@@ -1,0 +1,34 @@
+
+.setHeadFont {
+  font-size: 18px;
+  color: #fff !important;
+}
+
+.panel-group div {
+  color: #676767;
+  vertical-align: center;
+}
+
+.panel-heading {
+  height: 60px;
+  background-color: #3274F6 !important;
+}
+
+.setBackgrnd {
+  background-color: #F6F8FA;
+  height: 100vh;
+}
+.setInputHeight{
+  margin-top: 20px;
+}
+.setMarginTop{
+  margin-top: 15px;
+}
+.setLastBorder {
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+.form-control {
+  background-color: #F6F8FA;
+  height: 50px;
+}

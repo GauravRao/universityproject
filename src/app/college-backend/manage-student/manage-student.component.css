@@ -1,0 +1,50 @@
+.setMainBckgrndStyle {
+  background-color: rgb(242, 242, 242);
+}
+
+.setWhiteBckgrnd {
+  background-color: #fff;
+}
+
+.setHeadStyle {
+  height: 80px;
+  font-size: 23px;
+  font-weight: bold;
+  color: #A7A7A7;
+  line-height: 80px;
+}
+
+.setInputHeight {
+  margin-top: 25px;
+}
+
+.setmarginTop {
+  margin-top: 15px;
+}
+
+.setButtonStyle {
+  background-color: #0078F9;
+  border-radius: 0;
+  color: #fff;
+}
+
+.input-group-addon {
+  background: none !important;
+  border: none !important;
+}
+
+.innerHeadStyle {
+  color: #4C4C4C !important;
+  font-size: 14px;
+}
+
+.setFooterStyle {
+  height: 120px;
+  line-height: 120px;
+  margin-top: 35px;
+  color: #BCBCBC;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+  background-color: #F4F8FA !important;
+}
