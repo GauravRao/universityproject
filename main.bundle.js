@@ -266,7 +266,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/app-common/sidebar/sidebar.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"sidebar\" data-color=\"white\">\n  <div class=\"sidebar-wrapper\">\n    <p class=\"setIconHeadStyle\">SUPER ADMIN MENU</p>\n    <ul class=\"nav\">\n      <li class=\"active\">\n        <a href=\"#\" >\n          <i class=\"dashboard_icn\"></i>\n          <p>Dashboard</p>\n        </a>\n      </li>\n      <li>\n        <a href=\"#\">\n                    <i class=\"management_icn\"></i>\n                    <p>Management</p>\n                </a>\n      </li>\n      <li>\n        <a href=\"#\" [routerLink]=\"['/university/list']\">\n                    <i class=\"university_icn\"></i>\n                    <p>University</p>\n                </a>\n      </li>\n      <li>\n        <a href=\"#\" [routerLink]=\"['/post/list']\">\n                    <i class=\"post_icn\"></i>\n                    <p>Post</p>\n                </a>\n      </li>\n      <li>\n        <a href=\"#\">\n                    <i class=\"billing_icn\"></i>\n                    <p>Billing</p>\n                </a>\n      </li>\n\n    </ul>\n  </div>\n</div>\n"
+module.exports = "<div class=\"sidebar\" data-color=\"white\">\n  <div class=\"sidebar-wrapper\">\n    <p class=\"setIconHeadStyle\">SUPER ADMIN MENU</p>\n    <ul class=\"nav\">\n      <li class=\"active\">\n        <a href=\"#\">\n          <i class=\"dashboard_icn\"></i>\n          <p>Dashboard</p>\n        </a>\n      </li>\n      <li>\n        <a  [routerLink]=\"['/enterReport']\">\n                    <i class=\"management_icn\"></i>\n                    <p>Management</p>\n                </a>\n      </li>\n      <li>\n        <a  [routerLink]=\"['/university/list']\">\n                    <i class=\"university_icn\"></i>\n                    <p>University</p>\n                </a>\n      </li>\n      <li>\n        <a  [routerLink]=\"['/post/list']\">\n                    <i class=\"post_icn\"></i>\n                    <p>Post</p>\n                </a>\n      </li>\n      <li>\n        <a >\n                    <i class=\"billing_icn\"></i>\n                    <p>Billing</p>\n                </a>\n      </li>\n\n    </ul>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -384,10 +384,13 @@ AppComponent = __decorate([
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__super_admin_super_admin_module__ = __webpack_require__("../../../../../src/app/super-admin/super-admin.module.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__app_common_app_common_module__ = __webpack_require__("../../../../../src/app/app-common/app-common.module.ts");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__angular_material__ = __webpack_require__("../../../material/@angular/material.es5.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_hammerjs__ = __webpack_require__("../../../../hammerjs/hammer.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9_hammerjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_9_hammerjs__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__entry_login_login_component__ = __webpack_require__("../../../../../src/app/entry/login/login.component.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__entry_register_register_component__ = __webpack_require__("../../../../../src/app/entry/register/register.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__entry_login_login_component__ = __webpack_require__("../../../../../src/app/entry/login/login.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__entry_register_register_component__ = __webpack_require__("../../../../../src/app/entry/register/register.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__entry_sign_up_sign_up_component__ = __webpack_require__("../../../../../src/app/entry/sign-up/sign-up.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__college_backend_college_backend_module__ = __webpack_require__("../../../../../src/app/college-backend/college-backend.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__manage_posts_manage_posts_module__ = __webpack_require__("../../../../../src/app/manage-posts/manage-posts.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_hammerjs__ = __webpack_require__("../../../../hammerjs/hammer.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14_hammerjs___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_14_hammerjs__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -401,7 +404,9 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-// import { DataService }                      from './utils';
+
+
+
 
 
 
@@ -417,17 +422,20 @@ AppModule = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["NgModule"])({
         declarations: [
             __WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */],
-            __WEBPACK_IMPORTED_MODULE_10__entry_login_login_component__["a" /* LoginComponent */],
-            __WEBPACK_IMPORTED_MODULE_11__entry_register_register_component__["a" /* RegisterComponent */],
+            __WEBPACK_IMPORTED_MODULE_9__entry_login_login_component__["a" /* LoginComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__entry_register_register_component__["a" /* RegisterComponent */],
+            __WEBPACK_IMPORTED_MODULE_11__entry_sign_up_sign_up_component__["a" /* SignUpComponent */],
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
             __WEBPACK_IMPORTED_MODULE_3__angular_http__["a" /* HttpModule */],
             __WEBPACK_IMPORTED_MODULE_4__app_routing__["a" /* routing */],
             __WEBPACK_IMPORTED_MODULE_6__super_admin_super_admin_module__["a" /* SuperAdminModule */],
+            __WEBPACK_IMPORTED_MODULE_12__college_backend_college_backend_module__["a" /* CollegeBackendModule */],
             __WEBPACK_IMPORTED_MODULE_8__angular_material__["a" /* MdSnackBarModule */],
             __WEBPACK_IMPORTED_MODULE_7__app_common_app_common_module__["a" /* AppCommonModule */],
-            __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */]
+            __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_animations__["a" /* BrowserAnimationsModule */],
+            __WEBPACK_IMPORTED_MODULE_13__manage_posts_manage_posts_module__["a" /* ManagePostsModule */]
         ],
         providers: [],
         bootstrap: [__WEBPACK_IMPORTED_MODULE_5__app_component__["a" /* AppComponent */]]
@@ -444,19 +452,584 @@ AppModule = __decorate([
 "use strict";
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__entry_register_register_component__ = __webpack_require__("../../../../../src/app/entry/register/register.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__entry_sign_up_sign_up_component__ = __webpack_require__("../../../../../src/app/entry/sign-up/sign-up.component.ts");
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return routing; });
 
 
+
 var appRoutes = [
-    { path: '', redirectTo: 'login', pathMatch: 'full' },
-    { path: 'register', component: __WEBPACK_IMPORTED_MODULE_1__entry_register_register_component__["a" /* RegisterComponent */] }
+    { path: '', redirectTo: 'register', pathMatch: 'full' },
+    // { path: 'login', component: LoginComponent },
+    { path: 'register', component: __WEBPACK_IMPORTED_MODULE_1__entry_register_register_component__["a" /* RegisterComponent */] },
+    { path: 'signup', component: __WEBPACK_IMPORTED_MODULE_2__entry_sign_up_sign_up_component__["a" /* SignUpComponent */] }
 ];
 var routing = __WEBPACK_IMPORTED_MODULE_0__angular_router__["a" /* RouterModule */].forRoot(appRoutes);
 //# sourceMappingURL=app.routing.js.map
 
 /***/ }),
 
-/***/ "../../../../../src/app/entry/login/login.component.css":
+/***/ "../../../../../src/app/college-backend/add-member/add-member.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "input[type=checkbox] {\n  display: none;\n}\n\ninput[type=checkbox]+label {\n  background: #999;\n  height: 16px;\n  width: 16px;\n  display: inline-block;\n  padding: 0 0 0 0px;\n}\n\ninput[type=checkbox]:checked+label {\n  background: #0080FF;\n  height: 16px;\n  width: 16px;\n  display: inline-block;\n  padding: 0 0 0 0px;\n}\ninput[type=text],input[type=email]{\n  background: #F6F8FA;\n  border-radius: 0 !important;\n  height: 50px;\n}\n.btnCustomizeStyle{\n  background: #3274F6;\n  border-radius: 50px;\n\n}\n.setBackGrnd{\n  background: #F6F8FA;\n}\n.setHeaderBackground{\n  background: #fff;\n  height: 80px;\n  line-height: 80px;\n  font-size: 18px;\n  color: #ccc;\n}\n.setAddMemeberBodyConatiner{\n  background: #fff;\n  font-size: 16px;\n  margin-top: 25px;\n}\n.setInputHeight{\n  margin-top: 20px;\n}\n.setFooterStyle{\n  background: #fff;\n  margin-top: 30px;\n  height: 160px;\n  font-size: 16px;\n  color: #949494;\n  line-height: 160px;\n}\n.setTextPos{\n  margin-top: 30px;\n  color: #949494;\n}\n/*****************************************\n  upload button styles\n******************************************/\n\n.file-upload {\n  position: relative;\n  display: inline-block;\n  margin-top: 20px;\n  margin-bottom: 50px;\n}\n\n.file-upload__label {\n  display: block;\n  padding: 1em 2em;\n  color: #4984F6;\n  border-radius: .4em;\n  border:1px solid #4984F6;\n  transition: background .3s;\n\n  &:hover {\n    cursor: pointer;\n  }\n}\n\n.file-upload__input {\n  position: absolute;\n  left: 0;\n  top: 0;\n  right: 0;\n  bottom: 0;\n  font-size: 1;\n  width: 0;\n  height: 100%;\n  opacity: 0;\n}\n\n\n/*****************************************\n design styles\n******************************************/\n\nhtml {\n  font-family: 'helvetica neue', 'arial', sans-serif;\n  font-size: 24px;\n  font-weight: bold;\n  padding-top: 5em;\n  -webkit-font-smoothing: antialiased;\n  text-align: center;\n  background: #EE4F47;\n}\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/college-backend/add-member/add-member.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container-fluid setBackGrnd\">\n  <div class=\"row\">\n    <div class=\"col-xs-12 setHeaderBackground\">\n      <span class=\"col-md-offset-1\" [routerLink]=\"['/addTeacher']\">\n\t\t\t\tADD NEW MEMBER\n\t\t\t</span>\n    </div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-xs-12 col-sm-12 col-md-offset-3 col-md-6 col-lg-6 setAddMemeberBodyConatiner\">\n      <div class=\"col-xs-12 col-sm-12 col-md-10 col-lg-10 col-md-offset-1\">\n        <div class=\"row setInputHeight\">\n          <div class=\"col-xs-12 col-sm-12 col-md-4 col-lg-4\">\n            <span>Student</span>\n          </div>\n          <div class=\"col-xs-12 col-sm-12 col-md-4 col-lg-4\">\n            <span>Teacher</span>\n          </div>\n          <div class=\"col-xs-12 col-sm-12 col-md-4 col-lg-4\">\n            <span>Admin</span>\n          </div>\n        </div>\n        <div class=\"row setInputHeight\">\n          <div class=\"col-xs-12 col-sm-12 col-md-4 col-lg-4\">\n            <input type='radio' name='memberType' value='student' id=\"student\" />\n            <label for=\"student\"></label>\n          </div>\n          <div class=\"col-xs-12 col-sm-12 col-md-4 col-lg-4\">\n            <input type='radio' name='memberType' value='teacher' id=\"teacher\" />\n            <label for=\"teacher\"></label>\n          </div>\n          <div class=\"col-xs-12 col-sm-12 col-md-4 col-lg-4\">\n            <input type='radio' name='memberType' value='admin' id=\"admin\" />\n            <label for=\"admin\"></label>\n          </div>\n        </div>\n        <div class=\"row setInputHeight\">\n          <div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-6\">\n            <span>First Name <label>*</label></span>\n          </div>\n          <div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-6\">\n            <span>Last Name <label>*</label></span>\n          </div>\n          <div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-6\">\n            <input type=\"text\" class=\"form-control\" name=\"firstName\">\n          </div>\n          <div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-6\">\n            <input type=\"text\" class=\"form-control\" name=\"lastName\">\n          </div>\n        </div>\n        <div class=\"row setInputHeight\">\n          <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <span>Courses <label>*</label></span>\n          </div>\n          <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <input type=\"text\" class=\"form-control\" name=\"courses\">\n          </div>\n        </div>\n        <div class=\"row setInputHeight\">\n          <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <span>Phone <label>*</label></span>\n          </div>\n          <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <input type=\"text\" class=\"form-control\" name=\"phone\">\n          </div>\n        </div>\n        <div class=\"row setInputHeight\">\n          <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <span>Email <label>*</label></span>\n          </div>\n          <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n            <input type=\"email\" class=\"form-control\" name=\"email\">\n          </div>\n        </div>\n        <div class=\"row setInputHeight text-center\">\n          <div class=\"col-xs-12 col-sm-12 col-md-offset-4 col-md-5 col-lg-5 text-center\">\n            <button type=\"submit\" class=\"btn btn-lg btn-block btn-info btnCustomizeStyle\">Invite</button>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-xs-12 col-sm-12 col-md-offset-3 col-md-6 col-lg-6  setAddMemeberBodyConatiner\">\n      <div class=\"row setInputHeight\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center setTextPos\">\n          <span>ADD MORE THAN ONE MEMBER BY UPLOADING DATA VIA CSV FILE</span>\n        </div>\n        <div class=\"col-xs-12 setInputHeight text-center\">\n          <div class=\"file-upload\">\n            <label for=\"upload\" class=\"file-upload__label\">UPLOAD CSV FILE</label>\n            <input id=\"upload\" class=\"file-upload__input\" type=\"file\" name=\"file-upload\">\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"row setFooterStyle\">\n    <div class=\"col-xs-12 text-center\">\n      &copy; 2016 SOCIAL UNIVERSITY. All Rights Reserved\n    </div>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/college-backend/add-member/add-member.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddMemberComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var AddMemberComponent = (function () {
+    function AddMemberComponent() {
+    }
+    AddMemberComponent.prototype.ngOnInit = function () {
+    };
+    return AddMemberComponent;
+}());
+AddMemberComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-add-member',
+        template: __webpack_require__("../../../../../src/app/college-backend/add-member/add-member.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/college-backend/add-member/add-member.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], AddMemberComponent);
+
+//# sourceMappingURL=add-member.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/college-backend/add-teacher/add-teacher.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".setMainBckgrndStyle {\n  background-color: rgb(242, 242, 242);\n}\n\n.setWhiteBckgrnd {\n  background-color: #fff;\n}\n\n.setHeadStyle {\n  height: 80px;\n  font-size: 23px;\n  font-weight: bold;\n  color: #A7A7A7;\n  line-height: 80px;\n}\n\n.setInputHeight {\n  margin-top: 25px;\n}\n\n.setmarginTop {\n  margin-top: 15px;\n}\n\n.setButtonStyle {\n  background-color: #0078F9;\n  border-radius: 0;\n  color: #fff;\n}\n\n.input-group-addon {\n  background: none !important;\n  border: none !important;\n}\n\n.innerHeadStyle {\n  color: #4C4C4C !important;\n  font-size: 14px;\n}\n\n.setFooterStyle {\n  height: 120px;\n  line-height: 120px;\n  margin-top: 35px;\n  color: #BCBCBC;\n}\n\n.table-striped>tbody>tr:nth-of-type(odd) {\n  background-color: #F4F8FA !important;\n}\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/college-backend/add-teacher/add-teacher.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container-fluid setMainBckgrndStyle\">\n  <div class=\"row\">\n    <div class=\"col-xs-12 setWhiteBckgrnd setHeadStyle\">\n      <span class=\"col-md-offset-1\" [routerLink]=\"['/addStudent']\">Manage Teachers</span>\n    </div>\n  </div>\n  <div class=\"row setInputHeight\">\n    <div class=\"col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-8 setWhiteBckgrnd\">\n      <div class=\"row setmarginTop\">\n        <div class=\"col-xs-12 col-sm-12 col-md-3 col-lg-3\">\n          <button type=\"button\" name=\"button\" class=\"btn btn-md setButtonStyle\">ADD NEW TEACHER</button>\n        </div>\n        <div class=\"col-xs-12 col-sm-12 col-md-offset-6 col-md-3 col-lg-3 text-right\">\n          <div class=\"input-group\">\n            <span class=\"input-group-addon\">\n              <label for=\"searchAdmin\">Search:</label>\n           </span>\n            <input type=\"text\" id=\"searchAdmin\" class=\"form-control\">\n          </div>\n        </div>\n      </div>\n      <div class=\"row setmarginTop\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 table-responsive\">\n          <table class=\"table table-striped\" [mfData]=\"data\" #mf=\"mfDataTable\" [mfRowsOnPage]=\"rowsOnPage\">\n            <thead class=\"innerHeadStyle\">\n              <tr>\n                <th class=\" col-xs-6 col-sm-6 col-md-4 col-lg-4\">\n                  <mfDefaultSorter by=\"members\"><span class=\"innerHeadStyle\"> TEACHER NAME</span></mfDefaultSorter>\n                </th>\n                <th class=\"col-xs-6 col-sm-6 col-md-2 col-lg-2\">\n                  <mfDefaultSorter by=\"title\"><span class=\"innerHeadStyle\">SUBJECTS</span></mfDefaultSorter>\n                </th>\n                <th class=\"col-xs-6 col-sm-6 col-md-2 col-lg-2\">\n                  <mfDefaultSorter by=\"phone\"><span class=\"innerHeadStyle\">PHONE</span></mfDefaultSorter>\n                </th>\n                <th class=\"col-xs-6 col-sm-6 col-md-2 col-lg-2\">\n                  <mfDefaultSorter by=\"email\"><span class=\"innerHeadStyle\">EMAIL</span></mfDefaultSorter>\n                </th>\n                <th class=\"col-xs-6 col-sm-6 col-md-2 col-lg-2\">\n                  <span class=\"innerHeadStyle\">ACTIONS</span>\n                </th>\n              </tr>\n            </thead>\n            <tbody class=\"\" *ngIf=\"mf.data.length>0; else message\">\n              <tr *ngFor=\"let item of mf.data; let idx = index\">\n                <td class=\" col-xs-6 col-sm-6 col-md-4 col-lg-4\">{{item.college}}</td>\n                <td class=\" col-xs-6 col-sm-6 col-md-2 col-lg-2\">{{item.programs}}</td>\n                <td class=\" col-xs-6 col-sm-6 col-md-2 col-lg-2\">{{item.courses}}</td>\n                <td class=\" col-xs-6 col-sm-6 col-md-2 col-lg-2\">{{item.members}}</td>\n                <td class=\" col-xs-6 col-sm-6 col-md-2 col-lg-2\">\n                  <i class=\"fa fa-wrench\"></i>\n                  <i class=\"fa fa-wrench\"></i>\n                </td>\n              </tr>\n            </tbody>\n            <tfoot *ngIf=\"mf.data.length>0\">\n              <tr>\n                <th colspan=\"6\">\n                  <div class=\"row\">\n                    <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 pull-right\">\n                      <div class=\"col-xs-6 col-sm-6 col-md-4 col-lg-2\">\n                        <span>Showing Page {{ (mf.activePage - 1) * mf.rowsOnPage  + 1 }} of {{data_length}}</span>\n                      </div>\n                      <div class=\"col-xs-6 col-sm-6 col-md-4 col-lg-3\">\n                        <mfBootstrapPaginator></mfBootstrapPaginator>\n                      </div>\n                    </div>\n                  </div>\n              </tr>\n            </tfoot>\n            <ng-template #message>\n              <tbody>\n                <tr>\n                  <th colspan=\"6\" class=\"text-center\">\n                    No details Found\n                  </th>\n                </tr>\n              </tbody>\n            </ng-template>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"row setWhiteBckgrnd setFooterStyle\">\n    <div class=\"col-xs-12 text-center\">\n      <span>&copy; 2016 SOCIAL UNIVERSITY. All Rights Reserved</span>\n    </div>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/college-backend/add-teacher/add-teacher.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AddTeacherComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AddTeacherComponent = (function () {
+    function AddTeacherComponent(http) {
+        this.http = http;
+        this.rowsOnPage = 5;
+    }
+    AddTeacherComponent.prototype.getUniversity = function () {
+        var _this = this;
+        this.http.get("assets/university.json")
+            .subscribe(function (res) {
+            _this.data = res.json();
+        });
+    };
+    AddTeacherComponent.prototype.ngOnInit = function () {
+        this.getUniversity();
+    };
+    return AddTeacherComponent;
+}());
+AddTeacherComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-add-teacher',
+        template: __webpack_require__("../../../../../src/app/college-backend/add-teacher/add-teacher.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/college-backend/add-teacher/add-teacher.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
+], AddTeacherComponent);
+
+var _a;
+//# sourceMappingURL=add-teacher.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/college-backend/admin-header/admin-header.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".adminHeader.nav li {\n  margin-left: 0 !important;\n  margin-right: 0 !important;\n}\n\n.navbar-inverse {\n  background-color: #0078F9;\n  border: none;\n  border-radius: 0;\n}\n\n.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {\n  background-color: #0078F9 !important;\n  color: #fff;\n}\n\n.navbar-inverse .navbar-nav>li>a {\n  color: #81C1FC;\n}\n\n.dropdown-menu>li>a {\n  margin: 15px 10px;\n  padding: 9px 20px;\n}\n\n.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {\n  background-color: #0078F9 !important;\n  color: #fff;\n  padding: 10px 25px;\n}\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/college-backend/admin-header/admin-header.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<nav class=\"navbar navbar-inverse\">\n  <div class=\"container-fluid\">\n    <div class=\"navbar-header\">\n      <button type=\"button\" class=\"navbar-toggle\" data-toggle=\"collapse\" data-target=\"#myNavbar\">\n       <span class=\"icon-bar\"></span>\n       <span class=\"icon-bar\"></span>\n       <span class=\"icon-bar\"></span>\n     </button>\n    </div>\n    <div class=\"collapse navbar-collapse\" id=\"myNavbar\">\n      <ul class=\"adminHeader nav navbar-nav\">\n        <li class=\"active\"><a href=\"#\">DASHBOARD</a></li>\n        <!-- <li><a href=\"#\">MEMBERS</a></li> -->\n        <li class=\"dropdown adminMember\">\n       <a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\">MEMBERS\n       </a>\n       <ul class=\"dropdown-menu\">\n         <li><a href=\"#\">ADD MEMEBERS</a></li>\n         <li><a href=\"#\">MANAGE ADMINS</a></li>\n         <li><a href=\"#\">MANAGE TEACHERS</a></li>\n         <li><a href=\"#\">MANAGE STUDENTS</a></li>\n\n       </ul>\n     </li>\n        <li><a href=\"#\">SUBJECTS</a></li>\n        <li><a href=\"#\">POSTS</a></li>\n        <li><a href=\"#\">PAYMENTS</a></li>\n        <li><a href=\"#\">PRIVACY</a></li>\n        <li><a href=\"#\">SETTINGS</a></li>\n      </ul>\n      <ul class=\"nav navbar-nav navbar-right\">\n        <li><a href=\"#\">X</a></li>\n      </ul>\n    </div>\n  </div>\n</nav>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/college-backend/admin-header/admin-header.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AdminHeaderComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var AdminHeaderComponent = (function () {
+    function AdminHeaderComponent() {
+    }
+    AdminHeaderComponent.prototype.ngOnInit = function () {
+    };
+    return AdminHeaderComponent;
+}());
+AdminHeaderComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-admin-header',
+        template: __webpack_require__("../../../../../src/app/college-backend/admin-header/admin-header.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/college-backend/admin-header/admin-header.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], AdminHeaderComponent);
+
+//# sourceMappingURL=admin-header.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/college-backend/college-backend-routing.module.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__course_course_component__ = __webpack_require__("../../../../../src/app/college-backend/course/course.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__manage_admins_manage_admins_component__ = __webpack_require__("../../../../../src/app/college-backend/manage-admins/manage-admins.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__admin_header_admin_header_component__ = __webpack_require__("../../../../../src/app/college-backend/admin-header/admin-header.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__add_teacher_add_teacher_component__ = __webpack_require__("../../../../../src/app/college-backend/add-teacher/add-teacher.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__manage_student_manage_student_component__ = __webpack_require__("../../../../../src/app/college-backend/manage-student/manage-student.component.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CollegeBackendRoutingModule; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+var routes = [{
+        path: "addMembers", component: __WEBPACK_IMPORTED_MODULE_4__admin_header_admin_header_component__["a" /* AdminHeaderComponent */]
+    },
+    { path: "course", component: __WEBPACK_IMPORTED_MODULE_2__course_course_component__["a" /* CourseComponent */] },
+    {
+        path: 'addAdmin', component: __WEBPACK_IMPORTED_MODULE_3__manage_admins_manage_admins_component__["a" /* ManageAdminsComponent */],
+        children: [
+            { path: 'list', component: __WEBPACK_IMPORTED_MODULE_3__manage_admins_manage_admins_component__["a" /* ManageAdminsComponent */] },
+        ]
+    },
+    {
+        path: 'addTeacher', component: __WEBPACK_IMPORTED_MODULE_5__add_teacher_add_teacher_component__["a" /* AddTeacherComponent */],
+        children: [
+            { path: 'list', component: __WEBPACK_IMPORTED_MODULE_5__add_teacher_add_teacher_component__["a" /* AddTeacherComponent */] },
+        ]
+    },
+    {
+        path: 'addStudent', component: __WEBPACK_IMPORTED_MODULE_6__manage_student_manage_student_component__["a" /* ManageStudentComponent */],
+        children: [
+            { path: 'list', component: __WEBPACK_IMPORTED_MODULE_6__manage_student_manage_student_component__["a" /* ManageStudentComponent */] },
+        ]
+    }];
+var CollegeBackendRoutingModule = (function () {
+    function CollegeBackendRoutingModule() {
+    }
+    return CollegeBackendRoutingModule;
+}());
+CollegeBackendRoutingModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */].forChild(routes)],
+        exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */]]
+    })
+], CollegeBackendRoutingModule);
+
+//# sourceMappingURL=college-backend-routing.module.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/college-backend/college-backend.module.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/@angular/common.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular2_datatable__ = __webpack_require__("../../../../angular2-datatable/index.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_angular2_datatable___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_angular2_datatable__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__manage_admins_manage_admins_component__ = __webpack_require__("../../../../../src/app/college-backend/manage-admins/manage-admins.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__admin_header_admin_header_component__ = __webpack_require__("../../../../../src/app/college-backend/admin-header/admin-header.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__add_teacher_add_teacher_component__ = __webpack_require__("../../../../../src/app/college-backend/add-teacher/add-teacher.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__manage_student_manage_student_component__ = __webpack_require__("../../../../../src/app/college-backend/manage-student/manage-student.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__college_backend_routing_module__ = __webpack_require__("../../../../../src/app/college-backend/college-backend-routing.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__add_member_add_member_component__ = __webpack_require__("../../../../../src/app/college-backend/add-member/add-member.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__course_course_component__ = __webpack_require__("../../../../../src/app/college-backend/course/course.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__manage_subjects_manage_subjects_component__ = __webpack_require__("../../../../../src/app/college-backend/manage-subjects/manage-subjects.component.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CollegeBackendModule; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+
+
+
+
+
+var CollegeBackendModule = (function () {
+    function CollegeBackendModule() {
+    }
+    return CollegeBackendModule;
+}());
+CollegeBackendModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1__angular_common__["CommonModule"],
+            __WEBPACK_IMPORTED_MODULE_7__college_backend_routing_module__["a" /* CollegeBackendRoutingModule */],
+            __WEBPACK_IMPORTED_MODULE_2_angular2_datatable__["DataTableModule"]
+        ],
+        declarations: [__WEBPACK_IMPORTED_MODULE_8__add_member_add_member_component__["a" /* AddMemberComponent */], __WEBPACK_IMPORTED_MODULE_9__course_course_component__["a" /* CourseComponent */],
+            __WEBPACK_IMPORTED_MODULE_10__manage_subjects_manage_subjects_component__["a" /* ManageSubjectsComponent */], __WEBPACK_IMPORTED_MODULE_4__admin_header_admin_header_component__["a" /* AdminHeaderComponent */],
+            __WEBPACK_IMPORTED_MODULE_3__manage_admins_manage_admins_component__["a" /* ManageAdminsComponent */], __WEBPACK_IMPORTED_MODULE_6__manage_student_manage_student_component__["a" /* ManageStudentComponent */],
+            __WEBPACK_IMPORTED_MODULE_5__add_teacher_add_teacher_component__["a" /* AddTeacherComponent */]]
+    })
+], CollegeBackendModule);
+
+//# sourceMappingURL=college-backend.module.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/college-backend/course/course.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".logoImg {\n  margin-top: 5px;\n  width: 30%;\n}\n\n.pindicator {\n  /*margin-bottom: 50px;*/\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin: auto auto 50px auto;\n  width: 63rem;\n}\n\n.pindicator .bullet {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  position: relative;\n  text-align: center;\n  -webkit-transform-style: preserve-3d;\n          transform-style: preserve-3d;\n}\n\n.pindicator .bullet::before,\n.pindicator .bullet::after {\n  content: '';\n  display: block;\n  position: absolute;\n  height: .5rem;\n  top: 1.25rem;\n  -webkit-transform: translate3d(0, 0, -1px);\n          transform: translate3d(0, 0, -1px);\n}\n\n.pindicator .bullet::before {\n  background-color: lightgray;\n  width: 100%;\n}\n\n.pindicator .bullet::after {\n  background-color: #3274F6;\n  transition: opacity .25s ease-out;\n  opacity: 0;\n  width: 100%;\n}\n\n.pindicator .bullet:first-child::before,\n.pindicator .bullet:first-child::after {\n  left: 50%;\n  width: 50%;\n}\n\n.pindicator .bullet:last-child::before,\n.pindicator .bullet:last-child::after {\n  width: 50%;\n}\n\n.pindicator .icon {\n  background-color: lightgray;\n  border-radius: 100%;\n  color: transparent;\n  cursor: pointer;\n  font-size: 1.0rem;\n  display: inline-block;\n  height: 3em;\n  text-align: center;\n  transition: background-color .25s ease-out;\n  width: 3em;\n}\n\n.pindicator .text {\n  color: #333;\n  font-size: 1.2rem;\n  margin-top: 1rem;\n  text-transform: uppercase;\n  transition: background-color .25s ease-out;\n}\n\n.pindicator .past .icon,\n.pindicator .current .icon {\n  background-color: #3274F6;\n  color: white;\n}\n\n.pindicator .past::after,\n.pindicator .current::after {\n  opacity: 1;\n}\n\n.pindicator .past .text,\n.pindicator .current .text,\n.pindicator .next .text,\n{\n  color: #3274F6;\n}\n\n.setBackgroundStyle {\n  background: rgb(242, 242, 242);\n}\n\n.setBackgrnd {\n  margin-top: 40px;\n  margin-bottom: 40px;\n  background-color: #fff;\n}\n\n.setLineHeight {\n  text-align: right;\n  line-height: 62px;\n  font-size: 140%;\n}\n\n.headStyle {\n  color: #485668;\n  margin-top: 25px;\n  margin-bottom: 25px;\n  font-size: 16px;\n}\n\ndiv label input {\n  margin-right: 100px;\n}\n\n\n#ck-button {\n  margin: 4px;\n  width: 100%;\n  height: 40px;\n  background-color: #EFEFEF;\n  border-radius: 4px;\n  border: 1px solid #D0D0D0;\n  overflow: auto;\n  float: left;\n}\n\n#ck-button:hover {\n  background: #3274F6;\n}\n\n#ck-button label {\n  float: left;\n  width: 100%;\n  height: 40px;\n  line-height: 33px;\n  margin-bottom: 0 !important;\n}\n\n#ck-button label span {\n  text-align: center;\n  padding: 3px 0px;\n  display: block;\n}\n\n#ck-button label input {\n  position: absolute;\n  \n}\n\n#ck-button input:checked+span {\n  background-color: #3274F6;\n  height: 40px;\n  color: #fff;\n}\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/college-backend/course/course.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container-fluid setBackgroundStyle\">\n  <div class=\"row \">\n    <div class=\"col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-8 setBackgrnd\">\n      <div class=\"row text-center headStyle\">\n        <span> SELECT COURSE</span>\n      </div>\n      <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n        <div class=\"pindicator\">\n          <div class=\"bullet past\">\n            <span class=\"icon\"></span>\n            <div class=\"text\">FULL NAME</div>\n          </div>\n          <div class=\"bullet current\">\n            <span class=\"icon\"></span>\n            <div class=\"text\">COURSE</div>\n          </div>\n          <div class=\"bullet next future\">\n            <span class=\"icon\"></span>\n            <div class=\"text\">SEMESTER</div>\n          </div>\n          <div class=\"bullet future\">\n            <span class=\"icon\"></span>\n            <div class=\"text\">PHONE</div>\n          </div>\n          <div class=\"bullet future\">\n            <span class=\"icon\"></span>\n            <div class=\"text\">E-MAIL</div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-8\">\n      <div class=\"col-xs-12 col-sm-12 col-md-4 col-lg-4\">\n        <div class=\"row\">\n          <div class=\"col-xs-12\">\n            <p>COLUMN 1</p>\n            <div id=\"ck-button\">\n              <label>\n                <input type=\"checkbox\" value=\"1\"><span>SELECT THIS COLUMN</span>\n              </label>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/college-backend/course/course.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CourseComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var CourseComponent = (function () {
+    function CourseComponent() {
+    }
+    CourseComponent.prototype.ngOnInit = function () {
+        (function () {
+            "use strict";
+            var bulletClasses = {
+                elements: {
+                    container: ".pindicator",
+                    bullet: ".bullet",
+                },
+                helpers: {
+                    past: "past",
+                    current: "current",
+                    next: "next",
+                    future: "future",
+                }
+            };
+            var bulletEls;
+            document.addEventListener("DOMContentLoaded", initBullets);
+            function initBullets() {
+                bulletEls = Array.prototype.slice.call(document.body.querySelectorAll(bulletClasses.elements.bullet));
+                bulletEls.forEach(function (el) {
+                    el.addEventListener("mousedown", function (event) {
+                        gotoPage(bulletEls.indexOf(this) + 1);
+                    });
+                    el.addEventListener("touchstart", function (event) {
+                        event.preventDefault();
+                        gotoPage(bulletEls.indexOf(this) + 1);
+                    });
+                });
+            }
+            function gotoPage(pageNum) {
+                bulletEls.forEach(function (e) {
+                    e.classList.remove.apply(e.classList, Object.keys(bulletClasses.helpers).map(function (e) {
+                        return bulletClasses.helpers[e];
+                    }));
+                });
+                bulletEls[pageNum - 1].classList.add(bulletClasses.helpers.current);
+                if (pageNum > 1) {
+                    for (var i = 0; i < pageNum; i++) {
+                        bulletEls[i].classList.add(bulletClasses.helpers.past);
+                    }
+                }
+                if (pageNum < bulletEls.length) {
+                    bulletEls[pageNum].classList.add(bulletClasses.helpers.next);
+                    for (var i = bulletEls.length - 1; i >= pageNum; i--) {
+                        bulletEls[i].classList.add(bulletClasses.helpers.future);
+                    }
+                }
+            }
+        })();
+    };
+    return CourseComponent;
+}());
+CourseComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-course',
+        template: __webpack_require__("../../../../../src/app/college-backend/course/course.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/college-backend/course/course.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], CourseComponent);
+
+//# sourceMappingURL=course.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/college-backend/manage-admins/manage-admins.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".setMainBckgrndStyle {\n  background-color: rgb(242, 242, 242);\n}\n\n.setWhiteBckgrnd {\n  background-color: #fff;\n}\n\n.setHeadStyle {\n  height: 80px;\n  font-size: 23px;\n  font-weight: bold;\n  color: #A7A7A7;\n  line-height: 80px;\n}\n\n.setInputHeight {\n  margin-top: 25px;\n}\n\n.setmarginTop {\n  margin-top: 15px;\n}\n\n.setButtonStyle {\n  background-color: #0078F9;\n  border-radius: 0;\n  color: #fff;\n}\n\n.input-group-addon {\n  background: none !important;\n  border: none !important;\n}\n\n.innerHeadStyle {\n  color: #4C4C4C !important;\n  font-size: 14px;\n}\n\n.setFooterStyle {\n  height: 120px;\n  line-height: 120px;\n  margin-top: 35px;\n  color: #BCBCBC;\n}\n\n.table-striped>tbody>tr:nth-of-type(odd) {\n  background-color: #F4F8FA !important;\n}\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/college-backend/manage-admins/manage-admins.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container-fluid setMainBckgrndStyle\">\n  <div class=\"row\">\n    <div class=\"col-xs-12 setWhiteBckgrnd setHeadStyle\">\n      <span class=\"col-md-offset-1\">Manage Admins</span>\n    </div>\n  </div>\n  <div class=\"row setInputHeight\">\n    <div class=\"col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-8 setWhiteBckgrnd\">\n      <div class=\"row setmarginTop\">\n        <div class=\"col-xs-12 col-sm-12 col-md-3 col-lg-3\">\n          <button type=\"button\" name=\"button\" class=\"btn btn-md setButtonStyle\">ADD NEW ADMIN</button>\n        </div>\n        <div class=\"col-xs-12 col-sm-12 col-md-offset-6 col-md-3 col-lg-3 text-right\">\n          <div class=\"input-group\">\n            <span class=\"input-group-addon\">\n              <label for=\"searchAdmin\">Search:</label>\n           </span>\n            <input type=\"text\" id=\"searchAdmin\" class=\"form-control\">\n          </div>\n        </div>\n      </div>\n      <div class=\"row setmarginTop\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 table-responsive\">\n          <table class=\"table table-striped\" [mfData]=\"data\" #mf=\"mfDataTable\" [mfRowsOnPage]=\"rowsOnPage\">\n            <thead class=\"innerHeadStyle\">\n              <tr>\n                <th class=\" col-xs-6 col-sm-6 col-md-4 col-lg-4\">\n                  <mfDefaultSorter by=\"members\"><span class=\"innerHeadStyle\">ADMIN MEMBERS</span></mfDefaultSorter>\n                </th>\n                <th class=\"col-xs-6 col-sm-6 col-md-2 col-lg-2\">\n                  <mfDefaultSorter by=\"title\"><span class=\"innerHeadStyle\">TITLE</span></mfDefaultSorter>\n                </th>\n                <th class=\"col-xs-6 col-sm-6 col-md-2 col-lg-2\">\n                  <mfDefaultSorter by=\"phone\"><span class=\"innerHeadStyle\">PHONE</span></mfDefaultSorter>\n                </th>\n                <th class=\"col-xs-6 col-sm-6 col-md-2 col-lg-2\">\n                  <mfDefaultSorter by=\"email\"><span class=\"innerHeadStyle\">EMAIL</span></mfDefaultSorter>\n                </th>\n                <th class=\"col-xs-6 col-sm-6 col-md-2 col-lg-2\">\n                  <span class=\"innerHeadStyle\">ACTIONS</span>\n                </th>\n              </tr>\n            </thead>\n            <tbody class=\"\" *ngIf=\"mf.data.length>0; else message\">\n              <tr *ngFor=\"let item of mf.data; let idx = index\">\n                <td class=\" col-xs-6 col-sm-6 col-md-4 col-lg-4\">{{item.college}}</td>\n                <td class=\" col-xs-6 col-sm-6 col-md-2 col-lg-2\">{{item.programs}}</td>\n                <td class=\" col-xs-6 col-sm-6 col-md-2 col-lg-2\">{{item.courses}}</td>\n                <td class=\" col-xs-6 col-sm-6 col-md-2 col-lg-2\">{{item.members}}</td>\n                <td class=\" col-xs-6 col-sm-6 col-md-2 col-lg-2\">\n                  <i class=\"fa fa-wrench\"></i>\n                  <i class=\"fa fa-wrench\"></i>\n                </td>\n              </tr>\n            </tbody>\n            <tfoot *ngIf=\"mf.data.length>0\">\n              <tr>\n                <th colspan=\"6\">\n                  <div class=\"row\">\n                    <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 pull-right\">\n                      <div class=\"col-xs-6 col-sm-6 col-md-4 col-lg-2\">\n                        <span>Showing Page {{ (mf.activePage - 1) * mf.rowsOnPage  + 1 }} of {{data_length}}</span>\n                      </div>\n                      <div class=\"col-xs-6 col-sm-6 col-md-4 col-lg-3\">\n                        <mfBootstrapPaginator></mfBootstrapPaginator>\n                      </div>\n                    </div>\n                  </div>\n              </tr>\n            </tfoot>\n            <ng-template #message>\n              <tbody>\n                <tr>\n                  <th colspan=\"6\" class=\"text-center\">\n                    No details Found\n                  </th>\n                </tr>\n              </tbody>\n            </ng-template>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"row setWhiteBckgrnd setFooterStyle\">\n    <div class=\"col-xs-12 text-center\">\n      <span>&copy; 2016 SOCIAL UNIVERSITY. All Rights Reserved</span>\n    </div>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/college-backend/manage-admins/manage-admins.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__("../../../http/@angular/http.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ManageAdminsComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ManageAdminsComponent = (function () {
+    function ManageAdminsComponent(http) {
+        this.http = http;
+        this.rowsOnPage = 5;
+    }
+    ManageAdminsComponent.prototype.getUniversity = function () {
+        var _this = this;
+        this.http.get("assets/university.json")
+            .subscribe(function (res) {
+            _this.data = res.json();
+        });
+    };
+    ManageAdminsComponent.prototype.ngOnInit = function () {
+        this.getUniversity();
+    };
+    return ManageAdminsComponent;
+}());
+ManageAdminsComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-manage-admins',
+        template: __webpack_require__("../../../../../src/app/college-backend/manage-admins/manage-admins.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/college-backend/manage-admins/manage-admins.component.css")]
+    }),
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Http */]) === "function" && _a || Object])
+], ManageAdminsComponent);
+
+var _a;
+//# sourceMappingURL=manage-admins.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/college-backend/manage-student/manage-student.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".setMainBckgrndStyle {\n  background-color: rgb(242, 242, 242);\n}\n\n.setWhiteBckgrnd {\n  background-color: #fff;\n}\n\n.setHeadStyle {\n  height: 80px;\n  font-size: 23px;\n  font-weight: bold;\n  color: #A7A7A7;\n  line-height: 80px;\n}\n\n.setInputHeight {\n  margin-top: 25px;\n}\n\n.setmarginTop {\n  margin-top: 15px;\n}\n\n.setButtonStyle {\n  background-color: #0078F9;\n  border-radius: 0;\n  color: #fff;\n}\n\n.input-group-addon {\n  background: none !important;\n  border: none !important;\n}\n\n.innerHeadStyle {\n  color: #4C4C4C !important;\n  font-size: 14px;\n}\n\n.setFooterStyle {\n  height: 120px;\n  line-height: 120px;\n  margin-top: 35px;\n  color: #BCBCBC;\n}\n\n.table-striped>tbody>tr:nth-of-type(odd) {\n  background-color: #F4F8FA !important;\n}\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/college-backend/manage-student/manage-student.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container-fluid setMainBckgrndStyle\">\n  <div class=\"row\">\n    <div class=\"col-xs-12 setWhiteBckgrnd setHeadStyle\">\n      <span class=\"col-md-offset-1\" [routerLink]=\"['/addMembers']\" >MANAGE STUDENT</span>\n    </div>\n  </div>\n  <div class=\"row setInputHeight\">\n    <div class=\"col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-8 setWhiteBckgrnd\">\n      <div class=\"row setmarginTop\">\n        <div class=\"col-xs-12 col-sm-12 col-md-3 col-lg-3\">\n          <button type=\"button\" name=\"button\" class=\"btn btn-md setButtonStyle\">ADD NEW STUDENT</button>\n        </div>\n        <div class=\"col-xs-12 col-sm-12 col-md-offset-6 col-md-3 col-lg-3 text-right\">\n          <div class=\"input-group\">\n            <span class=\"input-group-addon\">\n              <label for=\"searchAdmin\">Search:</label>\n           </span>\n            <input type=\"text\" id=\"searchAdmin\" class=\"form-control\">\n          </div>\n        </div>\n      </div>\n      <div class=\"row setmarginTop\">\n        <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 table-responsive\">\n          <table class=\"table table-striped\" [mfData]=\"data\" #mf=\"mfDataTable\" [mfRowsOnPage]=\"rowsOnPage\">\n            <thead class=\"innerHeadStyle\">\n              <tr>\n                <th class=\" col-xs-6 col-sm-6 col-md-3 col-lg-3\">\n                  <mfDefaultSorter by=\"members\"><span class=\"innerHeadStyle\"> STUDENT NAME</span></mfDefaultSorter>\n                </th>\n                <th class=\" col-xs-6 col-sm-6 col-md-1 col-lg-1\">\n                  <mfDefaultSorter by=\"members\"><span class=\"innerHeadStyle\"> SEM</span></mfDefaultSorter>\n                </th>\n                <th class=\"col-xs-6 col-sm-6 col-md-2 col-lg-2\">\n                  <mfDefaultSorter by=\"title\"><span class=\"innerHeadStyle\">COURSE</span></mfDefaultSorter>\n                </th>\n                <th class=\"col-xs-6 col-sm-6 col-md-2 col-lg-2\">\n                  <mfDefaultSorter by=\"phone\"><span class=\"innerHeadStyle\">PHONE</span></mfDefaultSorter>\n                </th>\n                <th class=\"col-xs-6 col-sm-6 col-md-2 col-lg-2\">\n                  <mfDefaultSorter by=\"email\"><span class=\"innerHeadStyle\">EMAIL</span></mfDefaultSorter>\n                </th>\n                <th class=\"col-xs-6 col-sm-6 col-md-2 col-lg-2\">\n                  <span class=\"innerHeadStyle\">ACTIONS</span>\n                </th>\n              </tr>\n            </thead>\n            <tbody class=\"\" *ngIf=\"mf.data.length>0; else message\">\n              <tr *ngFor=\"let item of mf.data; let idx = index\">\n                <td class=\" col-xs-6 col-sm-6 col-md-3 col-lg-3\">{{item.college}}</td>\n                <td class=\" col-xs-6 col-sm-6 col-md-1 col-lg-1\">{{item.college}}</td>\n                <td class=\" col-xs-6 col-sm-6 col-md-2 col-lg-2\">{{item.programs}}</td>\n                <td class=\" col-xs-6 col-sm-6 col-md-2 col-lg-2\">{{item.courses}}</td>\n                <td class=\" col-xs-6 col-sm-6 col-md-2 col-lg-2\">{{item.members}}</td>\n                <td class=\" col-xs-6 col-sm-6 col-md-2 col-lg-2\">\n                  <i class=\"fa fa-wrench\"></i>\n                  <i class=\"fa fa-wrench\"></i>\n                </td>\n              </tr>\n            </tbody>\n            <tfoot *ngIf=\"mf.data.length>0\">\n              <tr>\n                <th colspan=\"6\">\n                  <div class=\"row\">\n                    <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 pull-right\">\n                      <div class=\"col-xs-6 col-sm-6 col-md-4 col-lg-2\">\n                        <span>Showing Page {{ (mf.activePage - 1) * mf.rowsOnPage  + 1 }} of {{data_length}}</span>\n                      </div>\n                      <div class=\"col-xs-6 col-sm-6 col-md-4 col-lg-3\">\n                        <mfBootstrapPaginator></mfBootstrapPaginator>\n                      </div>\n                    </div>\n                  </div>\n              </tr>\n            </tfoot>\n            <ng-template #message>\n              <tbody>\n                <tr>\n                  <th colspan=\"6\" class=\"text-center\">\n                    No details Found\n                  </th>\n                </tr>\n              </tbody>\n            </ng-template>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n  <div class=\"row setWhiteBckgrnd setFooterStyle\">\n    <div class=\"col-xs-12 text-center\">\n      <span>&copy; 2016 SOCIAL UNIVERSITY. All Rights Reserved</span>\n    </div>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/college-backend/manage-student/manage-student.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ManageStudentComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ManageStudentComponent = (function () {
+    function ManageStudentComponent() {
+        this.rowsOnPage = 5;
+    }
+    ManageStudentComponent.prototype.ngOnInit = function () {
+    };
+    return ManageStudentComponent;
+}());
+ManageStudentComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-manage-student',
+        template: __webpack_require__("../../../../../src/app/college-backend/manage-student/manage-student.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/college-backend/manage-student/manage-student.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], ManageStudentComponent);
+
+//# sourceMappingURL=manage-student.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/college-backend/manage-subjects/manage-subjects.component.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
@@ -474,10 +1047,71 @@ module.exports = module.exports.toString();
 
 /***/ }),
 
+/***/ "../../../../../src/app/college-backend/manage-subjects/manage-subjects.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container-fluid\">\n  <div class=\"row\">\n    <div class=\"col-xs-12\">\n      <span class=\"col-md-offset-1\">Manage Subjects</span>\n    </div>\n  </div>\n  <div class=\"row\">\n    <div class=\"col-xs-12 col-sm-12 col-md-4 col-lg-4\">\n      <span>ENGINEERING</span>\n      <ul>\n        <li>\n          B.Tech - Aeronotical Engineering\n        </li>\n        <li>B.Tech - Automobile Engineering</li>\n        <li>B.Tech - Biomedical Engineering</li>\n        <li>B.Tech - Biotechnology</li>\n        <li>B.Tech - Chemical Engineering</li>\n        <li>B.Tech - Civil Engineering</li>\n        <li>B.Tech - Computer and Comm.Engineering</li>\n        <li>B.Tech - Computer Science and Engineering</li>\n        <li>B.Tech - Electrical and Electronics Engineering</li>\n        <li>B.Tech - Industrial & Control Engineering</li>\n        <li>B.Tech - Information Technology</li>\n        <li>B.Tech - Instrumenatation and Control Engineering</li>\n        <li>B.Tech - Lateral Entry</li>\n        <li>B.Tech - Mechanical Engineering</li>\n        <li>B.Tech - Mechatronics Engineering</li>\n        <li>B.Tech - Print and Media Technology</li>\n      </ul>\n      <span>\tMANAGEMENT</span>\n     <ul>\n     \t<li>B.Com (Business Process Service)</li>\n     \t<li>B.Com Professional (Regular & Evening)</li>\n     \t<li>BBA - Bachelor of Business Administartion</li>\n     </ul>\n     <span>ARCHITECTURE</span>\n     <ul>\n     \t<li>Bachelor of Architecture</li>\n     \t<li>Bachelor of Deisgn (Fashion Design)</li>\n     \t<li>Bachelor of Design (Interior Design)</li>\n     </ul>\n    </div>\n    <div class=\"col-xs-12 col-sm-12 col-md-8 col-lg-8\">\n    <span>B.Tech Aeronotical Engineering</span>\n    \n    </div>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/college-backend/manage-subjects/manage-subjects.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ManageSubjectsComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ManageSubjectsComponent = (function () {
+    function ManageSubjectsComponent() {
+    }
+    ManageSubjectsComponent.prototype.ngOnInit = function () {
+    };
+    return ManageSubjectsComponent;
+}());
+ManageSubjectsComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-manage-subjects',
+        template: __webpack_require__("../../../../../src/app/college-backend/manage-subjects/manage-subjects.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/college-backend/manage-subjects/manage-subjects.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], ManageSubjectsComponent);
+
+//# sourceMappingURL=manage-subjects.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/entry/login/login.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "* {}\n\n/*body {\n  background-image: url(\"background1.jpg\");\n  background-size: 100% 100%\n}*/\n\nfooter {\n  background-color: white;\n  padding: 40px 40px 0px 40px;\n}\n\n.navbar {\n  background-color: transparent;\n  border-color: transparent;\n}\n\n.dropdown {\n  width: 100%;\n}\n\n.jumbotron {\n  background-color: white;\n  border-color: transparent;\n  color: #FFFFFF;\n}\n\n.jumbotron1 {\n  background-color: transparent;\n  border-color: transparent;\n  text-align: center;\n}\n\n#color {\n  background-color: #D3D3D3;\n}\n\n#header {\n  size: 50%;\n}\n\n\n/* Add a gray background color and some padding to the footer */\n\nfooter {\n  background-color: white;\n  position: bottom;\n  padding-left: 145px;\n}\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
 /***/ "../../../../../src/app/entry/login/login.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  login works!\n</p>\n"
+module.exports = ""
 
 /***/ }),
 
@@ -538,7 +1172,7 @@ module.exports = module.exports.toString();
 /***/ "../../../../../src/app/entry/register/register.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n  <div class=\"row setInputHeight\">\n    <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center\">\n      <img src=\"../assets/images/University_logo.svg\" alt=\"\">\n    </div>\n  </div>\n  <div class=\"row setInputHeight\">\n    <div class=\"col-xs-12 col-sm-12 col-md-offset-3 col-md-6 col-lg-6 setBackGrnd\">\n      <h2 class=\"text-center\">\n\t\t\t\tCreate your account\n\t\t\t</h2>\n      <p class=\"text-center\">Please contact your college administartive department to complete this process</p>\n      <div class=\"row\">\n        <div class=\"col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-8\">\n          <div class=\"row setInputHeight\">\n            <span>\n\t\t\t\t\tEmail address <span class=\"reqdStyle\">*</span>\n            </span>\n          </div>\n          <div class=\"row setInputHeight\">\n            <input type=\"text\" class=\"form-control\" placeholder=\"work@email.com\">\n          </div>\n          <div class=\"row setInputHeight\">\n            <span>\n\t\t\t\t\tInstitue address <span class=\"reqdStyle\">*</span>\n            </span>\n          </div>\n          <div class=\"row setInputHeight\">\n            <input type=\"text\" class=\"form-control\" placeholder=\"ABC University\">\n          </div>\n          <div class=\"row setInputHeight\">\n            <span>\n\t\t\t\t\t Website <span class=\"reqdStyle\">*</span>\n            </span>\n          </div>\n          <div class=\"row setInputHeight\">\n            <input type=\"text\" class=\"form-control\" placeholder=\"college - website\">\n          </div>\n          <div class=\"row setInputHeight text-center\">\n          \t<p>By creating a university.social account you're agreeing to accept the</p>\n          \t<p> <a href=\"\">University.social terms of service</a></p>\n          </div>\n          <div class=\"row text-center setInputHeightLast\">\n          \t<button class=\"btn btn-info btn-lg\">GET UNIVERSITY.SOCIAL</button>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"container-fluid\">\n  <div class=\"row setInputHeight\">\n    <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center\">\n      <img src=\"../assets/images/University_logo.svg\" alt=\"\">\n    </div>\n  </div>\n  <div class=\"row setInputHeight\">\n    <div class=\"col-xs-12 col-sm-12 col-md-offset-3 col-md-6 col-lg-6 setBackGrnd\">\n      <h2 class=\"text-center\">\n\t\t\t\tCreate your account\n\t\t\t</h2>\n      <p class=\"text-center\">Please contact your college administartive department to complete this process</p>\n      <div class=\"row\">\n        <div class=\"col-xs-12 col-sm-12 col-md-offset-2 col-md-8 col-lg-8\">\n          <div class=\"row setInputHeight\">\n            <span>\n\t\t\t\t\tEmail address <span class=\"reqdStyle\">*</span>\n            </span>\n          </div>\n          <div class=\"row setInputHeight\">\n            <input type=\"text\" class=\"form-control\" placeholder=\"work@email.com\">\n          </div>\n          <div class=\"row setInputHeight\">\n            <span>\n\t\t\t\t\tInstitue address <span class=\"reqdStyle\">*</span>\n            </span>\n          </div>\n          <div class=\"row setInputHeight\">\n            <input type=\"text\" class=\"form-control\" placeholder=\"ABC University\">\n          </div>\n          <div class=\"row setInputHeight\">\n            <span>\n\t\t\t\t\t Website <span class=\"reqdStyle\">*</span>\n            </span>\n          </div>\n          <div class=\"row setInputHeight\">\n            <input type=\"text\" class=\"form-control\" placeholder=\"college - website\">\n          </div>\n          <div class=\"row setInputHeight text-center\">\n            <p>By creating a university.social account you're agreeing to accept the</p>\n            <p> <a href=\"\">University.social terms of service</a></p>\n          </div>\n          <div class=\"row text-center setInputHeightLast\">\n            <button class=\"btn btn-info btn-lg\" [routerLink]=\"['/university/list']\">GET UNIVERSITY.SOCIAL</button>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -575,6 +1209,388 @@ RegisterComponent = __decorate([
 ], RegisterComponent);
 
 //# sourceMappingURL=register.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/entry/sign-up/sign-up.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".logoImg{\n  margin-top: 5px;\n  width: 30%;\n}\n\n.pindicator {\n  background-color: rgb(242, 242, 242);\n  display: -webkit-box;\n  display: -ms-flexbox;\n  display: flex;\n  margin: 1rem auto 0;\n  width: 63rem;\n}\n\n.pindicator .bullet {\n  -webkit-box-flex: 1;\n      -ms-flex: 1;\n          flex: 1;\n  position: relative;\n  text-align: center;\n  -webkit-transform-style: preserve-3d;\n          transform-style: preserve-3d;\n}\n\n.pindicator .bullet::before,\n.pindicator .bullet::after {\n  content: '';\n  display: block;\n  position: absolute;\n  height: .5rem;\n  top: 1.25rem;\n  -webkit-transform: translate3d(0, 0, -1px);\n          transform: translate3d(0, 0, -1px);\n}\n\n.pindicator .bullet::before {\n  background-color: lightgray;\n  width: 100%;\n}\n\n.pindicator .bullet::after {\n  background-color: #3274F6;\n  transition: opacity .25s ease-out;\n  opacity: 0;\n  width: 100%;\n}\n\n.pindicator .bullet:first-child::before,\n.pindicator .bullet:first-child::after {\n  left: 50%;\n  width: 50%;\n}\n\n.pindicator .bullet:last-child::before,\n.pindicator .bullet:last-child::after {\n  width: 50%;\n}\n\n.pindicator .icon {\n  background-color: lightgray;\n  border-radius: 100%;\n  color: transparent;\n  cursor: pointer;\n  font-size: 1.0rem;\n  display: inline-block;\n  height: 3em;\n  text-align: center;\n  transition: background-color .25s ease-out;\n  width: 3em;\n}\n\n.pindicator .text {\n  color: #333;\n  font-size: 1.2rem;\n  margin-top: 1rem;\n  text-transform: uppercase;\n  transition: background-color .25s ease-out;\n}\n\n.pindicator .past .icon,\n.pindicator .current .icon {\n  background-color: #3274F6;\n  color: white;\n}\n\n.pindicator .past::after,\n.pindicator .current::after {\n  opacity: 1;\n}\n\n.pindicator .past .text,\n.pindicator .current .text,\n.pindicator .next .text,\n{\n  color: #3274F6;\n}\n.setBackgroundStyle{\n  background:rgb(242, 242, 242);\n}\n.setLineHeight{\n  text-align: right;\n  line-height: 62px;\n  font-size: 140%;\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/entry/sign-up/sign-up.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"container-fluid\">\n  <div class=\"row setBackgroundStyle\">\n    <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n      <div class=\"col-xs-4 col-sm-4 col-md-1 col-lg-1\">\n        <img src=\"../assets/images/University_logo.svg\" alt=\"Logo\" class=\"logoImg\">\n      </div>\n      <div class=\"col-xs-12 col-sm-12 col-md-9 col-lg-9\">\n        <div class=\"pindicator\">\n          <div class=\"bullet past\">\n            <span class=\"icon\"></span>\n            <div class=\"text\">SIGN UP</div>\n          </div>\n          <div class=\"bullet current\">\n            <span class=\"icon\"></span>\n            <div class=\"text\">PROGRAMS</div>\n          </div>\n          <div class=\"bullet next future\">\n            <span class=\"icon\"></span>\n            <div class=\"text\">COURSES</div>\n          </div>\n          <div class=\"bullet future\">\n            <span class=\"icon\"></span>\n            <div class=\"text\">FINISH</div>\n          </div>\n        </div>\n      </div>\n      <div class=\"col-xs-12 col-sm-12 col-md-2 col-lg-2 setLineHeight\">\n        Step 1 of 4\n      </div>\n    </div>\n  </div>\n  <div class=\"row\">\n  \t<div class=\"col-xs-12 col-sm-12 col-md-4 col-lg-4\">\n  \t\t<div class=\"row\">\n  \t\t\t<div class=\"col-xs-12 text-center\">\n  \t\t\t\t<span>UNDER GRADUATE</span>\n  \t\t\t</div>\n  \t\t</div>\n  \t\t<div class=\"row\">\n  \t\t\t<div class=\"col-xs-6\">\n  \t\t\t\t<input type=\"text\" class=\"form-control\">\t\t\n  \t\t\t</div>\n  \t\t\t<div class=\"col-xs-6\">\n  \t\t\t\t<input type=\"text\" class=\"form-control\">\n  \t\t\t</div>\n  \t\t</div>\n  \t</div>\n  \t<div class=\"col-xs-12 col-sm-12 col-md-4 col-lg-4\">\n  \t\t<div class=\"row\">\n  \t\t\t<div class=\"col-xs-12 text-center\">\n  \t\t\t\t<span>POST GRADUATE</span>\n  \t\t\t</div>\n  \t\t</div>\n  \t\t<div class=\"row\">\n  \t\t\t<div class=\"col-xs-6\">\n  \t\t\t\t<input type=\"text\" class=\"form-control\">\t\t\n  \t\t\t</div>\n  \t\t\t<div class=\"col-xs-6\">\n  \t\t\t\t<input type=\"text\" class=\"form-control\">\n  \t\t\t</div>\n  \t\t</div>\n  \t</div>\n  \t<div class=\"col-xs-12 col-sm-12 col-md-4 col-lg-4\">\n  \t\t<div class=\"row\">\n  \t\t\t<div class=\"col-xs-12 text-center\">\n  \t\t\t\t<span>PHD/DIPLOMA</span>\n  \t\t\t</div>\n  \t\t</div>\n  \t\t<div class=\"row\">\n  \t\t\t<div class=\"col-xs-6\">\n  \t\t\t\t<input type=\"text\" class=\"form-control\">\t\t\n  \t\t\t</div>\n  \t\t\t<div class=\"col-xs-6\">\n  \t\t\t\t<input type=\"text\" class=\"form-control\">\n  \t\t\t</div>\n  \t\t</div>\t\n  \t</div>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/entry/sign-up/sign-up.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SignUpComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var SignUpComponent = (function () {
+    function SignUpComponent() {
+    }
+    SignUpComponent.prototype.ngOnInit = function () {
+        (function () {
+            "use strict";
+            var bulletClasses = {
+                elements: {
+                    container: ".pindicator",
+                    bullet: ".bullet",
+                },
+                helpers: {
+                    past: "past",
+                    current: "current",
+                    next: "next",
+                    future: "future",
+                }
+            };
+            var bulletEls;
+            document.addEventListener("DOMContentLoaded", initBullets);
+            function initBullets() {
+                bulletEls = Array.prototype.slice.call(document.body.querySelectorAll(bulletClasses.elements.bullet));
+                bulletEls.forEach(function (el) {
+                    el.addEventListener("mousedown", function (event) {
+                        gotoPage(bulletEls.indexOf(this) + 1);
+                    });
+                    el.addEventListener("touchstart", function (event) {
+                        event.preventDefault();
+                        gotoPage(bulletEls.indexOf(this) + 1);
+                    });
+                });
+            }
+            function gotoPage(pageNum) {
+                bulletEls.forEach(function (e) {
+                    e.classList.remove.apply(e.classList, Object.keys(bulletClasses.helpers).map(function (e) {
+                        return bulletClasses.helpers[e];
+                    }));
+                });
+                bulletEls[pageNum - 1].classList.add(bulletClasses.helpers.current);
+                if (pageNum > 1) {
+                    for (var i = 0; i < pageNum; i++) {
+                        bulletEls[i].classList.add(bulletClasses.helpers.past);
+                    }
+                }
+                if (pageNum < bulletEls.length) {
+                    bulletEls[pageNum].classList.add(bulletClasses.helpers.next);
+                    for (var i = bulletEls.length - 1; i >= pageNum; i--) {
+                        bulletEls[i].classList.add(bulletClasses.helpers.future);
+                    }
+                }
+            }
+        })();
+    };
+    return SignUpComponent;
+}());
+SignUpComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-sign-up',
+        template: __webpack_require__("../../../../../src/app/entry/sign-up/sign-up.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/entry/sign-up/sign-up.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], SignUpComponent);
+
+//# sourceMappingURL=sign-up.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/manage-posts/manage-posts-routing.module.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_router__ = __webpack_require__("../../../router/@angular/router.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__report_report_component__ = __webpack_require__("../../../../../src/app/manage-posts/report/report.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__post_report_post_report_component__ = __webpack_require__("../../../../../src/app/manage-posts/post-report/post-report.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__post_assignment_post_assignment_component__ = __webpack_require__("../../../../../src/app/manage-posts/post-assignment/post-assignment.component.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ManagePostsRoutingModule; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+var routes = [
+    {
+        path: 'enterReport', component: __WEBPACK_IMPORTED_MODULE_2__report_report_component__["a" /* ReportComponent */]
+    },
+    {
+        path: 'postReport', component: __WEBPACK_IMPORTED_MODULE_3__post_report_post_report_component__["a" /* PostReportComponent */]
+    },
+    {
+        path: 'postAssignement', component: __WEBPACK_IMPORTED_MODULE_4__post_assignment_post_assignment_component__["a" /* PostAssignmentComponent */]
+    }
+];
+var ManagePostsRoutingModule = (function () {
+    function ManagePostsRoutingModule() {
+    }
+    return ManagePostsRoutingModule;
+}());
+ManagePostsRoutingModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        imports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */].forChild(routes)],
+        exports: [__WEBPACK_IMPORTED_MODULE_1__angular_router__["a" /* RouterModule */]]
+    })
+], ManagePostsRoutingModule);
+
+//# sourceMappingURL=manage-posts-routing.module.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/manage-posts/manage-posts.module.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_common__ = __webpack_require__("../../../common/@angular/common.es5.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__manage_posts_routing_module__ = __webpack_require__("../../../../../src/app/manage-posts/manage-posts-routing.module.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__report_report_component__ = __webpack_require__("../../../../../src/app/manage-posts/report/report.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__post_report_post_report_component__ = __webpack_require__("../../../../../src/app/manage-posts/post-report/post-report.component.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__post_assignment_post_assignment_component__ = __webpack_require__("../../../../../src/app/manage-posts/post-assignment/post-assignment.component.ts");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ManagePostsModule; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+
+
+
+
+
+
+var ManagePostsModule = (function () {
+    function ManagePostsModule() {
+    }
+    return ManagePostsModule;
+}());
+ManagePostsModule = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
+        imports: [
+            __WEBPACK_IMPORTED_MODULE_1__angular_common__["CommonModule"],
+            __WEBPACK_IMPORTED_MODULE_2__manage_posts_routing_module__["a" /* ManagePostsRoutingModule */]
+        ],
+        declarations: [__WEBPACK_IMPORTED_MODULE_3__report_report_component__["a" /* ReportComponent */], __WEBPACK_IMPORTED_MODULE_4__post_report_post_report_component__["a" /* PostReportComponent */], __WEBPACK_IMPORTED_MODULE_5__post_assignment_post_assignment_component__["a" /* PostAssignmentComponent */]]
+    })
+], ManagePostsModule);
+
+//# sourceMappingURL=manage-posts.module.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/manage-posts/post-assignment/post-assignment.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.setHeadFont {\n  font-size: 18px;\n  color: #fff !important;\n}\n\n.panel-group div {\n  color: #676767;\n  vertical-align: center;\n}\n\n.panel-heading {\n  height: 60px;\n  background-color: #3274F6 !important;\n}\n\n.setBackgrnd {\n  background-color: #F6F8FA;\n  height: 100vh;\n}\n.setInputHeight{\n  margin-top: 20px;\n}\n.setMarginTop{\n  margin-top: 15px;\n}\n.setLastBorder {\n  padding-top: 10px;\n  border-top: 1px solid #ccc;\n}\n.form-control {\n  background-color: #F6F8FA;\n  height: 50px;\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/manage-posts/post-assignment/post-assignment.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row setBackgrnd\">\n  <div class=\"col-xs-12 col-sm-12 col-md-offset-3 col-md-5 col-lg-5\">\n    <div class=\"panel-group\">\n      <div class=\"panel\">\n        <div class=\"panel-heading setHeadFont\">\n          <span>Post Assignment</span>\n          <span class=\"pull-right\">X</span>\n        </div>\n        <div class=\"panel-body\">\n          <div class=\"row setInputHeight\">\n            <div class=\"col-xs-12\">\n              <span>Assignment Title <span>*</span></span>\n            </div>\n            <div class=\"col-xs-12 setMarginTop\">\n              <input type=\"text\" class=\"form-control\">\n            </div>\n          </div>\n          <div class=\"row setInputHeight\">\n            <div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-6\">\n              <div class=\"row\">\n                <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n                  <span>Select Subject <span>*</span></span>\n                </div>\n                <div class=\"col-xs-12 setMarginTop\">\n                  <select name=\"subject\" id=\"\" class=\"form-control\">\n                    <option value=\"\">Into Management</option>\n                    <option value=\"\">Management</option>\n                  </select>\n                </div>\n              </div>\n            </div>\n            <div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-6\">\n              <div class=\"row\">\n                <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n                  <span>Submission Type <span>*</span></span>\n                </div>\n                <div class=\"col-xs-12 setMarginTop\">\n                  <select name=\"reportType\" id=\"\" class=\"form-control\">\n                    <option value=\"\">Results</option>\n                    <option value=\"\">result</option>\n                  </select>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"row setInputHeight\">\n            <div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-6\">\n              <div class=\"row\">\n                <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n                  <span>Due Date <span>*</span></span>\n                </div>\n                <div class=\"col-xs-12 setMarginTop\">\n                  <select name=\"reportType\" id=\"\" class=\"form-control\">\n                    <option value=\"\">5.00 01-08-2016</option>\n                    <option value=\"\">6.00 01-08-2016</option>\n                  </select>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"row setMarginTop setLastBorder\">\n            <div class=\"col-xs-12 col-sm-12 col-md-offset-5 col-md-3 col-lg-3 text-right\">\n              <button class=\"btn btn-default btn-block\">Cancel</button>\n            </div>\n            <div class=\"col-xs-12 col-sm-12 col-md-offset-0 col-md-3 col-lg-3 text-right\">\n              <button class=\"btn btn-primary btn-block\" [routerLink]=\"['/addAdmin']\">Publish</button>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/manage-posts/post-assignment/post-assignment.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PostAssignmentComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var PostAssignmentComponent = (function () {
+    function PostAssignmentComponent() {
+    }
+    PostAssignmentComponent.prototype.ngOnInit = function () {
+    };
+    return PostAssignmentComponent;
+}());
+PostAssignmentComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-post-assignment',
+        template: __webpack_require__("../../../../../src/app/manage-posts/post-assignment/post-assignment.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/manage-posts/post-assignment/post-assignment.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], PostAssignmentComponent);
+
+//# sourceMappingURL=post-assignment.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/manage-posts/post-report/post-report.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\n.setHeadFont {\n  font-size: 18px;\n  color: #fff !important;\n}\n\n.panel-group div {\n  color: #676767;\n  vertical-align: center;\n}\n\n.panel-heading {\n  height: 60px;\n  background-color: #3274F6 !important;\n}\n\n.setBackgrnd {\n  background-color: #F6F8FA;\n  height: 100vh;\n}\n.setInputHeight{\n  margin-top: 20px;\n}\n.setMarginTop{\n  margin-top: 15px;\n}\n.setLastBorder {\n  padding-top: 10px;\n  border-top: 1px solid #ccc;\n}\n.form-control {\n  background-color: #F6F8FA;\n  height: 50px;\n}", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/manage-posts/post-report/post-report.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row setBackgrnd\">\n  <div class=\"col-xs-12 col-sm-12 col-md-offset-3 col-md-5 col-lg-5\">\n    <div class=\"panel-group\">\n      <div class=\"panel\">\n        <div class=\"panel-heading setHeadFont\">\n          <span>Post Report</span>\n          <span class=\"pull-right\">X</span>\n        </div>\n        <div class=\"panel-body\">\n          <div class=\"row setInputHeight\">\n            <div class=\"col-xs-12\">\n              <span>Report Title <span>*</span></span>\n            </div>\n            <div class=\"col-xs-12 setMarginTop\">\n              <input type=\"text\" class=\"form-control\">\n            </div>\n          </div>\n          <div class=\"row setInputHeight\">\n            <div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-6\">\n              <div class=\"row\">\n                <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n                  <span>Select Subject <span>*</span></span>\n                </div>\n                <div class=\"col-xs-12 setMarginTop\">\n                  <select name=\"subject\" id=\"\" class=\"form-control\">\n                    <option value=\"\">Into Management</option>\n                    <option value=\"\">Management</option>\n                  </select>\n                </div>\n              </div>\n            </div>\n            <div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-6\">\n              <div class=\"row\">\n                <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n                  <span>Report Type <span>*</span></span>\n                </div>\n                <div class=\"col-xs-12 setMarginTop\">\n                  <select name=\"reportType\" id=\"\" class=\"form-control\">\n                    <option value=\"\">Results</option>\n                    <option value=\"\">result</option>\n                  </select>\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"row setInputHeight\">\n            <div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-6\">\n              <div class=\"row\">\n                <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n                  <span>Select Subject <span>*</span></span>\n                </div>\n                <div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-6 setMarginTop\">\n                  <input type=\"text\" class=\"form-control\">\n                </div>\n              </div>\n            </div>\n            <div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-6\">\n              <div class=\"row\">\n                <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n                  <span>Report Type <span>*</span></span>\n                </div>\n                <div class=\"col-xs-12 col-sm-12 col-md-6 col-lg-6 setMarginTop\">\n                  <input type=\"text\" class=\"form-control\">\n                </div>\n              </div>\n            </div>\n          </div>\n          <div class=\"row setMarginTop setLastBorder\">\n            <div class=\"col-xs-12 col-sm-12 col-md-offset-5 col-md-3 col-lg-3 text-right\">\n              <button class=\"btn btn-default btn-block\">Cancel</button>\n            </div>\n             <div class=\"col-xs-12 col-sm-12 col-md-offset-0 col-md-3 col-lg-3 text-right\">\n              <button class=\"btn btn-primary btn-block\" [routerLink]=\"['/postAssignement']\">Next</button>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/manage-posts/post-report/post-report.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PostReportComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var PostReportComponent = (function () {
+    function PostReportComponent() {
+    }
+    PostReportComponent.prototype.ngOnInit = function () {
+    };
+    return PostReportComponent;
+}());
+PostReportComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-post-report',
+        template: __webpack_require__("../../../../../src/app/manage-posts/post-report/post-report.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/manage-posts/post-report/post-report.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], PostReportComponent);
+
+//# sourceMappingURL=post-report.component.js.map
+
+/***/ }),
+
+/***/ "../../../../../src/app/manage-posts/report/report.component.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, ".setBorderBottom {\n  margin-top: 10px;\n  padding-bottom: 5px;\n  border-bottom: 1px solid #ccc;\n  margin-left: 10px;\n  margin-right: 10px;\n}\n\n.setBorderBottomLast {\n  margin-top: 10px;\n  padding-bottom: 5px;\n  margin-left: 10px;\n  margin-right: 10px;\n}\n\n.setLastBorder {\n  padding-top: 10px;\n  border-top: 1px solid #ccc;\n}\n\n.setMarginTop {\n  margin-top: 10px;\n}\n\n.setHeadFont {\n  font-size: 18px;\n  color: #fff !important;\n}\n\n.panel-group div {\n  color: #676767;\n  vertical-align: center;\n}\n\n.panel-heading {\n  height: 60px;\n  background-color: #3274F6 !important;\n}\n\n.setBackgrnd {\n  background-color: #F6F8FA;\n  height: 100vh;\n}\n", ""]);
+
+// exports
+
+
+/*** EXPORTS FROM exports-loader ***/
+module.exports = module.exports.toString();
+
+/***/ }),
+
+/***/ "../../../../../src/app/manage-posts/report/report.component.html":
+/***/ (function(module, exports) {
+
+module.exports = "<div class=\"row setBackgrnd\">\n  <div class=\"col-xs-12 col-sm-12 col-md-offset-3 col-md-5 col-lg-5\">\n    <div class=\"panel-group\">\n      <div class=\"panel\">\n        <div class=\"panel-heading setHeadFont\">\n          <span >Enter Report</span>\n          <span class=\"pull-right\">X</span>\n        </div>\n        <div class=\"panel-body\">\n          <div class=\"row setBorderBottom\">\n            <div class=\"col-xs-12 col-sm-12 col-md-2 col-lg-2\">\n              <img src=\"../../../assets/images/Billing.svg\" alt=\"\" class=\"img img-circle img-responsive\">\n            </div>\n            <div class=\"col-xs-12 col-sm-12 col-md-8 col-lg-8 text-left\">\n              <span>Wesley Washington</span>\n            </div>\n            <div class=\"col-xs-12 col-sm-12 col-md-2 col-lg-2 text-center\">\n              <input type=\"text\" class=\"form-control\" value=\"42\">\n            </div>\n          </div>\n          <div class=\"row setBorderBottom\">\n            <div class=\"col-xs-12 col-sm-12 col-md-2 col-lg-2\">\n              <img src=\"../../../assets/images/Billing.svg\" alt=\"\" class=\"img img-circle img-responsive\">\n            </div>\n            <div class=\"col-xs-12 col-sm-12 col-md-8 col-lg-8\">\n              <span>Wesley Washington</span>\n            </div>\n            <div class=\"col-xs-12 col-sm-12 col-md-2 col-lg-2 text-center\">\n              <input type=\"text\" class=\"form-control\" value=\"42\">\n            </div>\n          </div>\n          <div class=\"row setBorderBottom\">\n            <div class=\"col-xs-12 col-sm-12 col-md-2 col-lg-2\">\n              <img src=\"../../../assets/images/Billing.svg\" alt=\"\" class=\"img img-circle img-responsive\">\n            </div>\n            <div class=\"col-xs-12 col-sm-12 col-md-8 col-lg-8\">\n              <span>Wesley Washington</span>\n            </div>\n            <div class=\"col-xs-12 col-sm-12 col-md-2 col-lg-2 text-center\">\n              <input type=\"text\" class=\"form-control\" value=\"42\">\n            </div>\n          </div>\n          <div class=\"row setBorderBottom\">\n            <div class=\"col-xs-12 col-sm-12 col-md-2 col-lg-2\">\n              <img src=\"../../../assets/images/Billing.svg\" alt=\"\" class=\"img img-circle img-responsive\">\n            </div>\n            <div class=\"col-xs-12 col-sm-12 col-md-8 col-lg-8\">\n              <span>Wesley Washington</span>\n            </div>\n            <div class=\"col-xs-12 col-sm-12 col-md-2 col-lg-2 text-center\">\n              <input type=\"text\" class=\"form-control\" value=\"42\">\n            </div>\n          </div>\n          <div class=\"row setBorderBottom\">\n            <div class=\"col-xs-12 col-sm-12 col-md-2 col-lg-2\">\n              <img src=\"../../../assets/images/Billing.svg\" alt=\"\" class=\"img img-circle img-responsive\">\n            </div>\n            <div class=\"col-xs-12 col-sm-12 col-md-8 col-lg-8\">\n              <span>Wesley Washington</span>\n            </div>\n            <div class=\"col-xs-12 col-sm-12 col-md-2 col-lg-2 text-center\">\n              <input type=\"text\" class=\"form-control\" value=\"42\">\n            </div>\n          </div>\n          <div class=\"row setBorderBottom\">\n            <div class=\"col-xs-12 col-sm-12 col-md-2 col-lg-2\">\n              <img src=\"../../../assets/images/Billing.svg\" alt=\"\" class=\"img img-circle img-responsive\">\n            </div>\n            <div class=\"col-xs-12 col-sm-12 col-md-8 col-lg-8\">\n              <span>Wesley Washington</span>\n            </div>\n            <div class=\"col-xs-12 col-sm-12 col-md-2 col-lg-2 text-right\">\n              <input type=\"text\" class=\"form-control\" value=\"42\">\n            </div>\n          </div>\n          <div class=\"row setBorderBottom\">\n            <div class=\"col-xs-12 col-sm-12 col-md-2 col-lg-2\">\n              <img src=\"../../../assets/images/Billing.svg\" alt=\"\" class=\"img img-circle img-responsive\">\n            </div>\n            <div class=\"col-xs-12 col-sm-12 col-md-8 col-lg-8\">\n              <span>Wesley Washington</span>\n            </div>\n            <div class=\"col-xs-12 col-sm-12 col-md-2 col-lg-2 text-center\">\n              <input type=\"text\" class=\"form-control\" value=\"42\">\n            </div>\n          </div>\n          <div class=\"row setBorderBottomLast\">\n            <div class=\"col-xs-12 col-sm-12 col-md-2 col-lg-2\">\n              <img src=\"../../../assets/images/Billing.svg\" alt=\"\" class=\"img img-circle img-responsive\">\n            </div>\n            <div class=\"col-xs-12 col-sm-12 col-md-8 col-lg-8\">\n              <span>Wesley Washington</span>\n            </div>\n            <div class=\"col-xs-12 col-sm-12 col-md-2 col-lg-2 text-center\">\n              <input type=\"text\" class=\"form-control\" value=\"42\">\n            </div>\n          </div>\n          <div class=\"row setMarginTop setLastBorder\">\n            <div class=\"col-xs-12 col-sm-12 col-md-offset-5 col-md-3 col-lg-3 text-right\">\n              <button class=\"btn btn-default btn-block\">Cancel</button>\n            </div>\n             <div class=\"col-xs-12 col-sm-12 col-md-offset-0 col-md-3 col-lg-3 text-right\">\n              <button class=\"btn btn-primary btn-block\" [routerLink]=\"['/postReport']\">Publish</button>\n            </div>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+
+/***/ }),
+
+/***/ "../../../../../src/app/manage-posts/report/report.component.ts":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("../../../core/@angular/core.es5.js");
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ReportComponent; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var ReportComponent = (function () {
+    function ReportComponent() {
+    }
+    ReportComponent.prototype.ngOnInit = function () {
+    };
+    return ReportComponent;
+}());
+ReportComponent = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["Component"])({
+        selector: 'app-report',
+        template: __webpack_require__("../../../../../src/app/manage-posts/report/report.component.html"),
+        styles: [__webpack_require__("../../../../../src/app/manage-posts/report/report.component.css")]
+    }),
+    __metadata("design:paramtypes", [])
+], ReportComponent);
+
+//# sourceMappingURL=report.component.js.map
 
 /***/ }),
 

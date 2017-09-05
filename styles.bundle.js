@@ -35,7 +35,7 @@ exports = module.exports = __webpack_require__("../../../../css-loader/lib/css-b
 exports.i(__webpack_require__("../../../../css-loader/index.js?{\"sourceMap\":false,\"importLoaders\":1}!../../../../postcss-loader/index.js?{\"ident\":\"postcss\"}!../../../material/prebuilt-themes/indigo-pink.css"), "");
 
 // module
-exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\nbody {\n  overflow-x: hidden;\n}\n\n.setBackgroundGrey {\n  background-color: #F1F5F8;\n  width: 106%;\n  height: 100vh;\n}\n\n.sidebar .nav, .off-canvas-sidebar .nav {\n  margin-left: 6%;\n}\n\n.sidebar[data-color=\"white\"] .nav li.active a, .off-canvas-sidebar[data-color=\"white\"] .nav li.active a {\n  background-color: #fff;\n  color: #ccc !important;\n  box-shadow: -1px 1px 8px 1px #ccc;\n}\n\n.mat-tab-list {\n  background-color: #fff !important;\n}\n\n.nav>li {\n  margin-left: 5%;\n  margin-right: 5%;\n}\n\n.setIconHeadStyle {\n  margin-top: 43px;\n  color: #C5CCD5;\n  margin-left: 16%;\n}\n", ""]);
+exports.push([module.i, "/* You can add global styles to this file, and also import other style files */\nbody {\n  overflow-x: hidden;\n}\n\n.setBackgroundGrey {\n  background-color: #F1F5F8;\n  width: 100%;\n  height: 100vh;\n}\n\n.sidebar .nav, .off-canvas-sidebar .nav {\n  margin-left: 6%;\n}\n\n.sidebar[data-color=\"white\"] .nav li.active a, .off-canvas-sidebar[data-color=\"white\"] .nav li.active a {\n  background-color: #fff;\n  color: #ccc !important;\n  box-shadow: -1px 1px 8px 1px #ccc;\n}\n\n.mat-tab-list {\n  background-color: #fff !important;\n}\n\n.nav>li {\n  margin-left: 5%;\n  margin-right: 5%;\n}\n\n.setIconHeadStyle {\n  margin-top: 43px;\n  color: #C5CCD5;\n  margin-left: 16%;\n}\n", ""]);
 
 // exports
 
