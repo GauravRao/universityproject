@@ -1,13 +1,29 @@
-.setInputHeight{
-	margin-top: 15px;
+.setInputHeight {
+  margin-top: 15px;
 }
-.reqdStyle{
-	color: #97B7E8;
+
+.reqdStyle {
+  color: #97B7E8;
 }
-.setBackGrnd{
-	background: #F6F8FA;
+
+.setBackGrnd {
+  background: #F6F8FA;
 }
-.setInputHeightLast{
-	margin-top: 25px;
-	margin-bottom: 30px;
+
+.setInputHeightLast {
+  margin-top: 25px;
+  margin-bottom: 30px;
+}
+
+.logo {
+  width: 3%;
+}
+
+.setwhite {
+	font-size: 16px;
+  background-color: #fff;
+}
+.form-control{
+	height: 50px;
+	background-color: #F6F8FA;
 }

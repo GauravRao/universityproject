@@ -1,0 +1,55 @@
+.otpImage {
+  background: url("../../../assets/images/girl_university.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /*width: 100%;*/
+  height: 100vh;
+}
+
+.setOtpStyle {
+  margin-top: 100px;
+  margin-left: 5%;
+  font-size: 26px;
+  font-weight: 400;
+  font-family: "MyWebFont" fallback serif;
+}
+
+.setOtpStyle>p:first-child,
+.setOtpStyle span {
+  margin-top: 30px;
+  color: #545454;
+}
+
+p {
+  margin-top: 30px;
+}
+
+.otpSqaure {
+  width: 70%;
+  height: 90px;
+}
+
+.setOtpInputStyle {
+  margin-top: 80px;
+  margin-left: 4%;
+}
+
+.form-control {
+  font-size: 30px;
+  text-align: center;
+}
+
+.setInputHeight {
+  margin-top: 80px;
+}
+
+.btnCustomize {
+  background-color: #3274F6;
+  color: #fff;
+  height: 70px;
+  font-size: 24px;
+  font-weight: 400;
+
+}

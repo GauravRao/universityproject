@@ -1,0 +1,164 @@
+
+.setBckgrnd{
+  background: #F4F6F8;
+}
+.setWhiteBckgrnd{
+  background: #fff;
+}
+fieldset,
+label {
+  margin: 0;
+  padding: 0;
+}
+.setInputHeightStyle{
+  margin-top: 55px;
+  border-top: 1px solid #ececec;
+
+}
+.setMarginTop{
+  margin-top: 20px;
+}
+body {
+  margin: 20px;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin: 10px;
+}
+
+.sideHead{
+  margin-top: 10px;
+  margin-bottom: 25px;
+  color: #ADADAD;
+  font-size: 18px;
+}
+
+.setSideContent{
+  color: #282828;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/****** Style Star Rating Widget *****/
+
+.rating {
+  border: none;
+  float: left;
+}
+
+.rating>input {
+  display: none;
+}
+
+.rating>label:before {
+  margin: 5px;
+  font-size: 1.25em;
+  font-family: FontAwesome;
+  display: inline-block;
+  content: "\f005";
+}
+
+.rating>.half:before {
+  content: "\f089";
+  position: absolute;
+}
+
+.rating>label {
+  color: #ddd;
+  float: right;
+}
+
+
+
+
+/***** CSS Magic to Highlight Stars on Hover *****/
+
+.rating>input:checked~label,
+
+
+
+/* show gold star when clicked */
+
+.rating:not(:checked)>label:hover,
+
+
+
+/* hover current star */
+
+.rating:not(:checked)>label:hover~label {
+  color: #FFD700;
+}
+
+
+
+
+/* hover previous stars in list */
+
+.rating>input:checked+label:hover,
+
+
+
+/* hover current star when changing rating */
+
+.rating>input:checked~label:hover,
+.rating>label:hover~input:checked~label,
+
+
+
+/* lighten current selection */
+
+.rating>input:checked~label:hover~label {
+  color: #FFED85;
+}
+
+.setInputHeight {
+  margin-top: 10px;
+}
+
+ul {
+  list-style: none;
+  line-height: 1em;
+  color: #313131;font-size: 16px;
+  font-weight: 400;
+}
+ul li{
+  margin-top: 15px;
+  /*padding-left: 50px;*/
+}
+
+ul li:before {
+  content: "";
+  line-height: 1em;
+  width: .5em;
+  height: .5em;
+  background-color: yellow;
+  float: left;
+  margin: .25em .25em 0;
+  border-radius: 50%;
+}
+
+.setCompanyHeaderStyle {
+  background: #F2F2F2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.companyName,.locationInner {
+  font-weight: 400;
+  font-size: 18px;
+  color: #1E1E1E;
+}
+
+.closeStyle{
+  font-size: 20px;
+}
+.companyLoc {
+  color: #C1C3C5;
+}
+
+.badge {
+  background: #92D148;
+  margin-top: 20px;
+  font-size: 14px;
+}

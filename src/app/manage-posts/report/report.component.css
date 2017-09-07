@@ -41,3 +41,10 @@
   background-color: #F6F8FA;
   height: 100vh;
 }
+.img{
+  width: 50%;
+}
+.panel-body span{
+  font-family: 'MywebFont';
+  font-size: 16px;
+}

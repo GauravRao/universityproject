@@ -1,0 +1,152 @@
+.logoImg {
+  margin-top: 5px;
+  width: 30%;
+}
+
+.pindicator {
+  background-color: rgb(242, 242, 242);
+  display: flex;
+  margin: 1rem auto 0;
+  width: 63rem;
+}
+
+.pindicator .bullet {
+  flex: 1;
+  position: relative;
+  text-align: center;
+  transform-style: preserve-3d;
+}
+
+.pindicator .bullet::before,
+.pindicator .bullet::after {
+  content: '';
+  display: block;
+  position: absolute;
+  height: .5rem;
+  top: 1.25rem;
+  transform: translate3d(0, 0, -1px);
+}
+
+.pindicator .bullet::before {
+  background-color: lightgray;
+  width: 100%;
+}
+
+.pindicator .bullet::after {
+  background-color: #3274F6;
+  transition: opacity .25s ease-out;
+  opacity: 0;
+  width: 100%;
+}
+
+.pindicator .bullet:first-child::before,
+.pindicator .bullet:first-child::after {
+  left: 50%;
+  width: 50%;
+}
+
+.pindicator .bullet:last-child::before,
+.pindicator .bullet:last-child::after {
+  width: 50%;
+}
+
+.pindicator .icon {
+  background-color: lightgray;
+  border-radius: 100%;
+  color: transparent;
+  cursor: pointer;
+  font-size: 1.0rem;
+  display: inline-block;
+  height: 3em;
+  text-align: center;
+  transition: background-color .25s ease-out;
+  width: 3em;
+}
+
+.pindicator .text {
+  color: #333;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  transition: background-color .25s ease-out;
+}
+
+.pindicator .past .icon,
+.pindicator .current .icon {
+  background-color: #3274F6;
+  color: white;
+}
+
+.pindicator .past::after,
+.pindicator .current::after {
+  opacity: 1;
+}
+
+.pindicator .past .text,
+.pindicator .current .text,
+.pindicator .next .text,
+{
+  color: #3274F6;
+}
+
+.setBackgroundStyle {
+  background: rgb(242, 242, 242);
+}
+
+.setLineHeight {
+  text-align: right;
+  line-height: 62px;
+  font-size: 140%;
+}
+
+.mainBodyStyle h1 {
+  margin-top: 80px;
+}
+
+.mainBodyStyle p {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #677382;
+}
+
+.form-control {
+  height: 50px;
+  background: #F6F8FA;
+}
+
+.setInputStyle {
+  margin-top: 50px;
+}
+
+.setFormStyle>input {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.setFormStyle>span {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: circle;
+  font-size: 18px;
+  font-weight: 600;
+}
+ul li{
+  margin-top: 15px;
+}
+.setButtonStyle{
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background: #F2F2F2;
+}
+.btnCustomize {
+  background-color: #3274F6;
+  color: #fff;
+  /*height: 70px;*/
+  font-size: 24px;
+  font-weight: 400;
+
+}

@@ -5,6 +5,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { HeaderService } from './header/header.service';
 import { Routes, RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { PostMenuComponent } from './post-menu/post-menu.component';
 
 @NgModule({
 	imports: [
@@ -15,6 +16,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 		HeaderComponent,
 		SidebarComponent,
 		DashboardComponent,
+		PostMenuComponent,
 	],
 	exports: [
 		HeaderComponent,

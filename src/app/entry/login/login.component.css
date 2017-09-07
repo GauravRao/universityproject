@@ -1,49 +1,195 @@
-* {}
-
-/*body {
-  background-image: url("background1.jpg");
-  background-size: 100% 100%
-}*/
-
-footer {
-  background-color: white;
-  padding: 40px 40px 0px 40px;
+.logo {
+  float: left;
 }
 
-.navbar {
-  background-color: transparent;
-  border-color: transparent;
+.logoName {
+  float: right;
+  margin-top: 15px;
+  margin-left: 10px;
+  font-family: 'MyWebFont';
+  font-size: 24px;
+  color: #fff;
 }
 
-.dropdown {
+.navbar-inverse {
+  background: none;
+  border: none;
+}
+
+.containerImage {
+  background: url("../../../assets/images/landing.png") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   width: 100%;
+  height: 100vh;
 }
 
-.jumbotron {
-  background-color: white;
-  border-color: transparent;
-  color: #FFFFFF;
+.nav>li {
+  margin: 0;
+  margin-top: 15px;
+  padding-left: 40px;
+  padding-right: 0px;
 }
 
-.jumbotron1 {
-  background-color: transparent;
-  border-color: transparent;
-  text-align: center;
+.nav.navbar-nav {
+  margin-left: 37%;
 }
 
-#color {
-  background-color: #D3D3D3;
+.nav>li>a {
+  color: #fff;
+  font-size: 18px;
 }
 
-#header {
-  size: 50%;
+.form-control {
+  height: 50px;
 }
 
+.setInputHeight {
+  margin-top: 35px;
+}
 
-/* Add a gray background color and some padding to the footer */
+.round {
+  position: relative;
+}
 
-footer {
-  background-color: white;
-  position: bottom;
-  padding-left: 145px;
+.round label {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 28px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 28px;
+  margin-top: 10px;
+}
+
+.round label:after {
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 6px;
+  left: 7px;
+  opacity: 0;
+  position: absolute;
+  top: 8px;
+  transform: rotate(-45deg);
+  width: 12px;
+}
+
+.round input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.round input[type="checkbox"]:checked+label {
+  background-color: #3274F6;
+  border-color: #3274F6;
+}
+
+.round input[type="checkbox"]:checked+label:after {
+  opacity: 1;
+}
+
+.setBackgroundDivColor {
+  background-color: #FFFFFF;
+  border: 1px solid #ccc;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.remeberMe {
+  line-height: 50px;
+  color: #DFDFDF;
+  font-size: 16px;
+  margin-left: 20px;
+}
+
+.btnCustomizeColor {
+  background-color: #3274F6;
+  border-radius: 0;
+  color: #fff;
+  box-shadow: 3px 11px 10px -7px #B2C7FA
+}
+
+.hrLineOR {
+  height: 16px;
+  border-bottom: 1px solid #ececec;
+  padding: 0 10px;
+  text-align: center
+}
+
+.hrLineOR>span {
+  font-size: 20px;
+  background-color: #fff;
+  color: #ccc;
+  padding: 0 10px;
+}
+
+.appleStore {
+  margin-top: 8px;
+  width: 80%;
+  height: 100%;
+}
+
+.googleStore {
+  width: 100%;
+  height: 100%;
+}
+.navbar-header{
+  margin-left: 10%;
+}
+
+.borderTop {
+  border-top: 1px solid #ececec;
+}
+.signInHead{
+  color: #3274F6;
+  font-size: 16px;
+}
+.input-group-addon {
+  height: 50px;
+  border: none;
+  background: none;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+.footerMsg p {
+  color: #cfcfcf;
+  font-size: 18px;
+  font-family: 'MyWebFont1';
+}
+
+.footerMsg span {
+  color: #3274F6;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: 'MyWebFont1';
+  margin-top: 15px;
+}
+
+.footerMsg {
+  margin-bottom: 20px;
+}
+
+.setStaticPageColor {
+  color: #3274F6;
+  font-family: 'MyWebFont1';
+  font-weight: 800;
+  font-size: 16px;
+}
+
+.setStaticPageColor ul {
+  list-style: none;
+}
+
+.setStaticPageColor ul li:not(:first-child) {
+  margin-top: 10px;
 }
