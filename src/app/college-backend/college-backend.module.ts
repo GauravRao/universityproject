@@ -9,12 +9,15 @@ import { CollegeBackendRoutingModule } from './college-backend-routing.module';
 import { AddMemberComponent } from './add-member/add-member.component';
 import { CourseComponent } from './course/course.component';
 import { ManageSubjectsComponent } from './manage-subjects/manage-subjects.component';
+import { FormsModule } from '@angular/forms';
+
 
 @NgModule({
   imports: [
     CommonModule,
     CollegeBackendRoutingModule,
-    DataTableModule
+    DataTableModule,
+    FormsModule
   ],
   declarations: [AddMemberComponent, CourseComponent,
     ManageSubjectsComponent, AdminHeaderComponent,

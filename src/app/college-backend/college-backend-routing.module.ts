@@ -8,7 +8,7 @@ import { AddTeacherComponent } from './add-teacher/add-teacher.component';
 import { ManageStudentComponent } from './manage-student/manage-student.component';
 
 const routes: Routes = [{
-  path: "addMembers", component: AdminHeaderComponent
+  path: "addMembers", component: AddMemberComponent
 },
 { path: "course", component: CourseComponent },
 {

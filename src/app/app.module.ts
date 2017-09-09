@@ -16,7 +16,7 @@ import { ManagePostsModule } from './manage-posts/manage-posts.module';
 import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
 import { NgxIntlTelInputModule } from 'ngx-intl-tel-input';
 import { ManipalModule } from './manipal/manipal.module';
-
+import { SubjectsModule } from './subjects/subjects.module';
 import 'hammerjs';
 import { OtpComponent } from './entry/otp/otp.component';
 import { ContactComponent } from './entry/contact/contact.component';
@@ -47,7 +47,8 @@ import { MainModule } from './main/main.module';
     AppCommonModule,
     BrowserAnimationsModule,
     ManagePostsModule,
-    ManipalModule
+    ManipalModule,
+    SubjectsModule
   ],
   providers: [
     // DataService,

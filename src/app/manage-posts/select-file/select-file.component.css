@@ -1,0 +1,152 @@
+#main-container {
+  font-family: verdana;
+  font-stretch: extra-expanded;
+  background: #f2f2f2;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.content-container {
+  padding-top: 15px;
+}
+
+.text-muted {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+button,
+input,
+select,
+select:focus,
+tr,
+tr:focus,
+li:focus,
+button:focus,
+input:focus,
+textarea,
+textarea:focus {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  outline: 0 !important;
+}
+
+
+/*Navbar styling*/
+
+.navbar {
+  z-index: 1000;
+  border-radius: 0;
+  border-color: transparent;
+  height: 63px;
+  background-color: white;
+}
+
+.navbar-collapse {
+  background-color: white;
+}
+
+.navbar>.container {
+  margin-top: 5px;
+}
+
+.navbar-icon {
+  height: 30px;
+  margin-top: -5px;
+}
+
+.navbar-button:hover {
+  border-bottom: 1px solid #187afb;
+}
+
+.navbar-profile-img {
+  height: 35px;
+  margin-top: -8px;
+}
+
+.brand-img {
+  height: 50px;
+  margin-top: -15px;
+}
+
+.search {
+  margin-left: -20px;
+  box-shadow: 0;
+  border: 2px solid #e8e5e5;
+  border-radius: 0;
+  width: 450px !important;
+}
+
+.search:focus {
+  border-color: #187afb;
+}
+
+.btn-search {
+  color: rgba(0, 0, 0, 0.2);
+  border-color: transparent;
+  background-color: #e8e5e5;
+  margin-left: -5px;
+}
+
+.btn-search:hover,
+.btn-search:active,
+.btn-search:focus {
+  color: rgba(0, 0, 0, 0.3) !important;
+  border-color: transparent !important;
+  background-color: #e8e5e5 !important;
+}
+
+.btn-search>i {
+  margin-left: 40px;
+}
+
+
+/*End of navbar styling*/
+
+.navbar-right {
+  margin-right: -16%;
+  width: 45%;
+}
+
+.nav li {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.setHeadFont {
+  font-size: 18px;
+  color: #fff !important;
+}
+
+
+.panel-heading {
+  height: 60px;
+  border-radius: 5px 5px 0 0 ;
+  background-color: #0076FF !important;
+}
+
+.setBackgrnd {
+  background-color: #F6F8FA;
+  height: 100vh;
+}
+
+.setInputHeight {
+  margin-top: 20px;
+}
+
+.setMarginTop {
+  margin-top: 15px;
+}
+
+.setLastBorder {
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #0076FF;
+  border-color: #2e6da4;
+}

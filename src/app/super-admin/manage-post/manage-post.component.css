@@ -8,44 +8,59 @@
   margin-top: 10%;
 }
 
-.sidebar .nav, .off-canvas-sidebar .nav {
+.sidebar .nav,
+.off-canvas-sidebar .nav {
   margin-left: 6%;
 }
 
-.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+.table>tbody>tr>td,
+.table>tbody>tr>th,
+.table>tfoot>tr>td,
+.table>tfoot>tr>th,
+.table>thead>tr>td,
+.table>thead>tr>th {
   border: none !important;
   height: 50px;
 }
 
-.titleStyle{
-	font-size: 18px;
-	color: #333;
-	line-height: 50px;
-}
-.innerHeadStyle{
-	color: #ccc;
-	font-weight: lighter;
-	font-size: 12px;
+.titleStyle {
+  font-size: 18px;
+  color: #656565;
+  font-weight: 400;
+  line-height: 50px;
 }
 
-.setCollegeStyle{
-	color: #ccc;
-}
-.setColorBlue{
-	color: #96C3FB;
+.innerHeadStyle {
+  color: #ccc;
+  font-weight: lighter;
+  font-size: 12px;
 }
 
-.setBorderBottom{
-	border-bottom: 1px solid #ececec;
+.setCollegeStyle {
+  color: #ccc;
 }
+
+.setColorBlue {
+  color: #96C3FB;
+}
+
+.setBorderBottom {
+  border-bottom: 1px solid #ececec;
+}
+
+.addCollege {
+  color: #9EA9B7;
+  margin-top: 10px;
+}
+
 /deep/ .mat-tab-label {
-    line-height: 48px;
-    height: 48px;
-    padding: 0 12px;
-    cursor: pointer;
-    box-sizing: border-box;
-    opacity: .6;
-    min-width: 150px !important;
-    text-align: center;
-    position: relative;
+  line-height: 48px;
+  height: 48px;
+  padding: 0 12px;
+  cursor: pointer;
+  box-sizing: border-box;
+  opacity: .6;
+  min-width: 150px !important;
+  text-align: center;
+  position: relative;
 }

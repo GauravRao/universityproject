@@ -1,12 +1,20 @@
-.projectIcon{
-	width: 100px;
-	height: 100%;
+.postMenuStyle {
+  font-size: 25px;
+  font-weight: 600;
+  color: #505050;
 }
-.postMenuStyle{
-	font-size: 25px;
-	font-weight: 600;
-	color: #505050;
+
+.setInputHeight {
+  margin-top: 50px;
 }
-.setInputHeight{
-	margin-top: 50px;
+
+.border {
+  border-right: 1px solid #EEEEEE;
+}
+
+.modal-body {
+  background: #fff;
+}
+.horizontalStyle{
+  
 }

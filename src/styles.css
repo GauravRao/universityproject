@@ -2,18 +2,26 @@
 
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 
-@font-face {
+/*@font-face {
   font-family: 'MyWebFont';
   src: url('./assets/fonts/NunitoSans-Regular.ttf');
-  /* IE9 Compat Modes */
-  src: url('./assets/fonts/NunitoSans-Regular.ttf') format('embedded-opentype'), /* IE6-IE8 */
-  url('./assets/fonts/NunitoSans-Regular.ttf') format('woff2'), /* Super Modern Browsers */
-  url('./assets/fonts/NunitoSans-Regular.ttf') format('woff'), /* Pretty Modern Browsers */
-  url('./assets/fonts/NunitoSans-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  src: url('./assets/fonts/NunitoSans-Regular.ttf') format('embedded-opentype'), 
+  url('./assets/fonts/NunitoSans-Regular.ttf') format('woff2'),  
+  url('./assets/fonts/NunitoSans-Regular.ttf') format('woff'), 
+  url('./assets/fonts/NunitoSans-Regular.ttf') format('truetype'), 
   url('./assets/fonts/NunitoSans-Regular.ttf') format('svg');
+}*/
+@font-face {
+  font-family: 'MyWebFont';
+  src: url('./assets/fonts/VarelaRound-Regular.ttf');
+  /* IE9 Compat Modes */
+  src: url('./assets/fonts/VarelaRound-Regular.ttf') format('embedded-opentype'), /* IE6-IE8 */
+  url('./assets/fonts/VarelaRound-Regular.ttf') format('woff2'),  Super Modern Browsers 
+  url('./assets/fonts/VarelaRound-Regular.ttf') format('woff'), /* Pretty Modern Browsers */
+  url('./assets/fonts/VarelaRound-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+  url('./assets/fonts/VarelaRound-Regular.ttf') format('svg');
   /* Legacy iOS */
 }
-
 @font-face {
   font-family: 'MyWebFont1';
   src: url('./assets/fonts/NunitoSans-Bold.ttf');
@@ -60,6 +68,7 @@ body {
 
 .setIconHeadStyle {
   margin-top: 43px;
+  font-size: 12px;
   color: #C5CCD5;
   margin-left: 16%;
 }
@@ -67,4 +76,19 @@ body {
 input[type=tel] {
   height: 50px;
   width: 133%;
+}
+.searchMain .mat-tab-label{
+  color: #000;
+  min-width: 0 !important;
+
+}
+.panel-default>.panel-heading{
+  background: #fff !important;
+}
+.managePostScreen .mat-tab-label{
+  min-width: 0 !important;
+  padding: 0 20px !important;
+}
+.setFont{
+  font-family: 'MyWebFont' , Fallback, Regular;
 }

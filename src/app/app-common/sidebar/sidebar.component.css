@@ -465,6 +465,7 @@ h2.title {
 .sidebar .nav,
 .off-canvas-sidebar .nav {
   margin-top: 20px;
+  border-bottom: 1px solid #ececec;
 }
 .sidebar .nav li > a,
 .off-canvas-sidebar .nav li > a {
@@ -488,6 +489,7 @@ h2.title {
 .sidebar .nav p,
 .off-canvas-sidebar .nav p {
   margin: 0;
+  color: #C5CAD3;
   line-height: 30px;
   font-size: 14px;
 }
@@ -5068,9 +5070,9 @@ footer .btn {
     height: calc(100vh - 75px);
     overflow: auto;
     width: 40vh;
-    top: 80px;
+    top: 45px;
     z-index: 4;
-    border-top: 1px solid #ccc;
+    /*border-top: 1px solid #ccc;*/
 }
 .dashboard_icn {
   display: inline-block;
@@ -5106,4 +5108,61 @@ footer .btn {
   background-repeat: no-repeat;
   width: 15%;
   height: 25px;
+}
+
+
+/*Left panel styling*/
+
+.leftpanel-heading {
+  font-size: 11px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.3);
+  margin-left: 15px;
+}
+
+.btn-leftpanel {
+  overflow-wrap: break-word;
+  color: #C5CAD3;
+  background-color: transparent;
+  border-color: transparent;
+  text-align: left !important;
+}
+
+.btn-leftpanel:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.btn-leftpanel.active {
+  border-left: 4px solid #187afb;
+  background-color: white;
+}
+
+.btn-leftpanel>i {
+  margin-right: 7px;
+  color: white;
+  background-color: #187afb;
+  padding: 6px;
+}
+
+.btn-leftpanel>img {
+  margin-left: 3px;
+  height: 25px;
+  margin-right: 7px;
+}
+
+button,
+input,
+select,
+select:focus,
+tr,
+tr:focus,
+li:focus,
+button:focus,
+input:focus,
+textarea,
+textarea:focus {
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  outline: 0 !important;
 }

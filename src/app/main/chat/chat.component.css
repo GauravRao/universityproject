@@ -1,0 +1,114 @@
+.circle:before {
+  content: ' \25CF';
+  font-size: 30px;
+  color: #51EFB1;
+  line-height: 22px;
+}
+
+.setMarginTop {
+  margin-top: 15px;
+}
+
+.textWrite {
+  bottom: -21px;
+  position: fixed;
+  /*position: absolute;*/
+}
+
+.form-control {
+  width: 56vh;
+  margin-left: 1.5%;
+}
+
+.panel-heading {
+  height: 50px;
+}
+
+.chatName {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.addChatMembers {
+  font-size: 22px;
+  font-weight: 200;
+}
+
+.setSenderBackground {
+  line-height: 60px;
+  font-size: 20px;
+  color: #383838;
+  background: #F3F3F3;
+  border-radius: 50px;
+  padding: 20px 20px;
+}
+
+.setRecieverBackground {
+  line-height: 60px;
+  font-size: 20px;
+  color: #fff;
+  background: #007BF9;
+  border-radius: 50px 50px 0 50px;
+  padding: 20px 20px;
+}
+
+.setRecieverBackgroundSecond {
+  line-height: 60px;
+  font-size: 20px;
+  color: #fff;
+  background: #007BF9;
+  border-radius: 50px 0 50px 50px;
+  padding: 20px 20px;
+}
+
+.dayStyle {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #818181;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.frame {
+  background: #fff;
+  height: 500px;
+  overflow-y: scroll;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+ul {
+  width: 100%;
+  list-style-type: none;
+  padding: 18px;
+  /*position: absolute;*/
+  /*bottom: 32px;*/
+  display: flex;
+  flex-direction: column;
+}
+
+input:focus {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #d4d4d4;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #d4d4d4;
+}
+
+:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #d4d4d4;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #d4d4d4;
+}

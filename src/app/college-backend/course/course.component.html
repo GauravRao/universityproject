@@ -37,9 +37,11 @@
           <div class="col-xs-12">
             <p>COLUMN 1</p>
             <div id="ck-button">
-              <label>
-                <input type="checkbox" value="1"><span>SELECT THIS COLUMN</span>
-              </label>
+              <div class="ui toggle checkbox">
+              
+                <input type="checkbox" [(ngModel)]="version2" name="versionControl" (click)="changeText()">
+                <label (click)="changeText()">{{versionText}}</label>
+              </div>
             </div>
           </div>
         </div>

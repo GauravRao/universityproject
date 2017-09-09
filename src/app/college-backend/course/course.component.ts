@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
 
 @Component({
   selector: 'app-course',
@@ -6,11 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./course.component.css']
 })
 export class CourseComponent implements OnInit {
-
+  version2: boolean = false;
+versionText="Select this colums"
   constructor() { }
 
+  changeText() {
+    let versionText = this.version2 ? "Selected" : "Select this colums";
+  }
+
   ngOnInit() {
-  	(function() {
+    (function() {
       "use strict";
 
       var bulletClasses = {

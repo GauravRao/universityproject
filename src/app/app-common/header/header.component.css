@@ -8,7 +8,7 @@
     position: fixed;
     z-index: 100;
     background-color: #fff;
-    height: 80px;
+    height: 60px;
   }
 }
 
@@ -27,7 +27,7 @@
 
 .setBrandNameStyle {
   line-height: 4;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
   margin-left:-12%; 
   color: #D3D8E0;
@@ -51,4 +51,8 @@
     height: 25%;
     cursor: pointer;
   }
+}
+.setImgStyle{
+  width: 30px;
+  height: 30px;
 }

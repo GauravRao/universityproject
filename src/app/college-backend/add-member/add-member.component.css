@@ -1,5 +1,46 @@
+
+.adminHeader.nav li {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.navbar-inverse {
+  background-color: #0078F9;
+  border: none;
+  border-radius: 0;
+}
+
+.navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+  background-color: #0078F9 !important;
+  color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #81C1FC;
+}
+
+.dropdown-menu>li>a {
+  margin: 15px 10px;
+  padding: 9px 20px;
+}
+
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+  background-color: #0078F9 !important;
+  color: #fff;
+  padding: 10px 25px;
+}
+
 input[type=checkbox] {
   display: none;
+}
+.marginLeft{
+  padding-left: 5%;
+}
+.check
+{
+    opacity:0.5;
+  color:#996;
+  
 }
 
 input[type=checkbox]+label {
@@ -99,7 +140,6 @@ input[type=text],input[type=email]{
 ******************************************/
 
 html {
-  font-family: 'helvetica neue', 'arial', sans-serif;
   font-size: 24px;
   font-weight: bold;
   padding-top: 5em;
